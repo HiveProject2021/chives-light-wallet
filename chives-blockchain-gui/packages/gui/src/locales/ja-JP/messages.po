@@ -24,7 +24,7 @@ msgstr "(オプション)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chives’s blocks further? Check out <0>Chives Explorer</0> built by an open source developer."
-msgstr "*チアのブロックをさらに調べたいですか？オープンソース開発者に提供していただいた <0>Chives Explorer</0> を是非ご覧ください。"
+msgstr "*Chivesのブロックをさらに調べたいですか？オープンソース開発者に提供していただいた <0>Chives Explorer</0> を是非ご覧ください。"
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -49,7 +49,7 @@ msgstr "収穫機は耕地が実際に保存されているデバイス上に走
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chives Blockchain"
-msgstr "チアブロックチェーンについて"
+msgstr "Chivesブロックチェーンについて"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -229,7 +229,7 @@ msgstr "ブロック VDF 評価回数"
 
 #: src/components/block/Block.jsx:337
 msgid "Block at height {0} in the Chives blockchain"
-msgstr "チアブロックチェーン内の高さ {0} のブロック"
+msgstr "Chivesブロックチェーン内の高さ {0} のブロック"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -323,15 +323,15 @@ msgstr "Keybase でチャット"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "チア"
+msgstr "Chives"
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "チアブロックチェーンの Wiki"
+msgstr "Chivesブロックチェーンの Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Chives Wallet"
-msgstr "チアウォレット"
+msgstr "Chivesウォレット"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -738,7 +738,7 @@ msgstr "支払い指示を編集"
 
 #: src/components/wallet/WalletImport.tsx:146
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chives wallet."
-msgstr "チアウォレットを復元するには、24語の合言葉を入力してください。"
+msgstr "Chivesウォレットを復元するには、24語の合言葉を入力してください。"
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -752,7 +752,7 @@ msgstr "エラー"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send chives to coloured address. Please enter a chives address."
-msgstr "エラー: チアは色付きのアドレスには送れません。チアのアドレスを入力してください。"
+msgstr "エラー: Chivesは色付きのアドレスには送れません。Chivesのアドレスを入力してください。"
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1577,7 +1577,7 @@ msgstr "フィルターを通過した耕地数"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chives. <0>Learn more</0>"
-msgstr "耕地とは、チアを収穫し、得るためにハードドライブ上に確保する領域です。<0>詳しく</0>"
+msgstr "耕地とは、Chivesを収穫し、得るためにハードドライブ上に確保する領域です。<0>詳しく</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -2042,7 +2042,7 @@ msgstr "支払いインターバル長 (ブロック数)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chives per interval): {0}"
-msgstr "支払い額上限 (チア毎インターバル): {0}"
+msgstr "支払い額上限 (Chives毎インターバル): {0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2241,7 +2241,7 @@ msgstr "この機能は GUI 限定です。"
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
 msgid "This is the amount of Chives that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chives that you have just spent but is not yet in the blockchain."
-msgstr "取引に使用できるチアの額です。承認待ちの耕作報酬、承認待ちの入金取引、及びブロックチェーンにまだ含まれていない消費チアはいずれも含まれていません。"
+msgstr "取引に使用できるChivesの額です。承認待ちの耕作報酬、承認待ちの入金取引、及びブロックチェーンにまだ含まれていない消費Chivesはいずれも含まれていません。"
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2261,7 +2261,7 @@ msgstr "これが農家がブロックを作成した日時です。時間証明
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of chives in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "現在の先端サブブロックにおいて、あなたの秘密鍵が所有している全チアの額です。凍結中の耕作報酬は含まれますが、承認待ちの入出金取引は反映されていません。"
+msgstr "現在の先端サブブロックにおいて、あなたの秘密鍵が所有している全Chivesの額です。凍結中の耕作報酬は含まれますが、承認待ちの入出金取引は反映されていません。"
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2307,7 +2307,7 @@ msgstr "このトレードはこのブロック高でブロックチェーンに
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 msgid "This version of Chives is no longer compatible with the blockchain and can not safely farm."
-msgstr "ご使用のバージョンのチアアプリはブロックチェーンと互換性が無く、安全に耕作できません。"
+msgstr "ご使用のバージョンのChivesアプリはブロックチェーンと互換性が無く、安全に耕作できません。"
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2546,7 +2546,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
 msgid "Want to earn more Chives? Add more plots to your farm."
-msgstr "畑に耕地を増やしましょう。さらにチアを得られますよ。"
+msgstr "畑に耕地を増やしましょう。さらにChivesを得られますよ。"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2574,7 +2574,7 @@ msgstr "ブロック重とはこのブロックを含めた全てのブロック
 
 #: src/components/selectKey/SelectKey.tsx:141
 msgid "Welcome to Chives. Please log in with an existing key, or create a new key."
-msgstr "チアにようこそ。お持ちの鍵でログインするか、新しく鍵を作成してください。"
+msgstr "Chivesにようこそ。お持ちの鍵でログインするか、新しく鍵を作成してください。"
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2742,7 +2742,7 @@ msgstr "{currencyCode} ブロック報酬"
 
 #: src/components/farm/card/FarmCardTotalChivesFarmed.tsx:29
 msgid "{currencyCode} Total Chives Farmed"
-msgstr "{currencyCode} 全収穫チア"
+msgstr "{currencyCode} 全収穫Chives"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

@@ -61,7 +61,7 @@ msgstr ""
 #: src/electron/main.tsx:423
 #: src/electron/main.tsx:510
 #~ msgid "About Chives Blockchain"
-#~ msgstr "Относно Чиа Блокчейн"
+#~ msgstr "Относно Chives Блокчейн"
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
@@ -378,7 +378,7 @@ msgstr "Чат в KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "Чиа"
+msgstr "Chives"
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:25
 #: src/components/wallet/create/WalletCreateList.tsx:32
@@ -387,7 +387,7 @@ msgstr ""
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "Чиа блокчейн Wiki"
+msgstr "Chives блокчейн Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:23
 msgid "Chives Wallet"
@@ -1709,7 +1709,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 #~ msgid "Plots are allocated space on your hard drive used to farm and earn Chives. <0>Learn more</0>"
-#~ msgstr "Плотовете са разпределено място на вашия хард диск, които се ползват за фармете и печелене на Чиа. <0>Научете повече</0>"
+#~ msgstr "Плотовете са разпределено място на вашия хард диск, които се ползват за фармете и печелене на Chives. <0>Научете повече</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 #~ msgid "Plotting"

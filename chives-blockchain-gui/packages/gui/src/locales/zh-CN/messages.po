@@ -24,7 +24,7 @@ msgstr "（可选）"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chives’s blocks further? Check out <0>Chives Explorer</0> built by an open source developer."
-msgstr "* 想要进一步了解奇亚？来看看一位开源开发者创建的 <0>奇亚区块浏览器</0>。"
+msgstr "* 想要进一步了解韭菜？来看看一位开源开发者创建的 <0>韭菜区块浏览器</0>。"
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -49,7 +49,7 @@ msgstr "收割机是一个在存有农田文件的机器上运行的服务。农
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chives Blockchain"
-msgstr "关于奇亚Chives区块链项目"
+msgstr "关于韭菜Chives区块链项目"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -229,7 +229,7 @@ msgstr "区块可验证延迟函数迭代"
 
 #: src/components/block/Block.jsx:337
 msgid "Block at height {0} in the Chives blockchain"
-msgstr "奇亚区块链上高度为 {0} 的区块"
+msgstr "韭菜区块链上高度为 {0} 的区块"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -323,15 +323,15 @@ msgstr "在Keybase上参与讨论"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "奇亚"
+msgstr "韭菜"
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "奇亚区块链项目维基"
+msgstr "韭菜区块链项目维基"
 
 #: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Chives Wallet"
-msgstr "奇亚钱包"
+msgstr "韭菜钱包"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -738,7 +738,7 @@ msgstr "编辑支付指令"
 
 #: src/components/wallet/WalletImport.tsx:146
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chives wallet."
-msgstr "请输入你保存的24个助记词来恢复奇亚钱包"
+msgstr "请输入你保存的24个助记词来恢复韭菜钱包"
 
 #: src/components/farm/FarmerStatus.tsx:21
 #: src/components/farm/FarmerStatus.tsx:22
@@ -752,7 +752,7 @@ msgstr "错误"
 
 #: src/components/wallet/standard/WalletStandard.tsx:456
 msgid "Error: Cannot send chives to coloured address. Please enter a chives address."
-msgstr "错误：无法发送奇亚到染色地址。请输入奇亚钱包地址。"
+msgstr "错误：无法发送韭菜到染色地址。请输入韭菜钱包地址。"
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 msgid "Estimated Network Space"
@@ -1577,7 +1577,7 @@ msgstr "通过初筛的农田"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chives. <0>Learn more</0>"
-msgstr "农田就是在你的硬盘上分配的一块空间，用来收获奇亚币。<0>了解更多</0>"
+msgstr "农田就是在你的硬盘上分配的一块空间，用来收获韭菜币。<0>了解更多</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"
@@ -2042,7 +2042,7 @@ msgstr "支出迭代长度(区块数)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chives per interval): {0}"
-msgstr "消费限额（单位时间可消费的奇亚币）：{0}"
+msgstr "消费限额（单位时间可消费的韭菜币）：{0}"
 
 #: src/components/fullNode/FullNode.jsx:100
 msgid "State"
@@ -2241,7 +2241,7 @@ msgstr "此功能只在图形界面中提供。"
 
 #: src/components/wallet/card/WalletCardSpendableBalance.tsx:26
 msgid "This is the amount of Chives that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chives that you have just spent but is not yet in the blockchain."
-msgstr "这是你目前可以交易的奇亚币数额。该数额不包含处理中的农场奖励、收入交易，以及未经区块链确认的支付交易。"
+msgstr "这是你目前可以交易的韭菜币数额。该数额不包含处理中的农场奖励、收入交易，以及未经区块链确认的支付交易。"
 
 #: src/components/wallet/card/WalletCardPendingChange.tsx:26
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2261,7 +2261,7 @@ msgstr "此时间是该区块被农民创建的时间，因此，此时间会早
 
 #: src/components/wallet/card/WalletCardTotalBalance.tsx:34
 msgid "This is the total amount of chives in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "这里是你的私钥所控制的, 到目前最新子块高度为止的全部奇亚数. 包含被冻结的耕种奖励, 但不包含待处理的收入与支出."
+msgstr "这里是你的私钥所控制的, 到目前最新子块高度为止的全部韭菜数. 包含被冻结的耕种奖励, 但不包含待处理的收入与支出."
 
 #: src/components/wallet/card/WalletCardPendingTotalBalance.tsx:29
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2307,7 +2307,7 @@ msgstr "该交易在链上的区块高度"
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 msgid "This version of Chives is no longer compatible with the blockchain and can not safely farm."
-msgstr "此版本的奇亚客户端与区块链已经不再兼容，无法安全地种植。"
+msgstr "此版本的韭菜客户端与区块链已经不再兼容，无法安全地种植。"
 
 #: src/components/fullNode/FullNode.jsx:92
 msgid "Time Created"
@@ -2546,7 +2546,7 @@ msgstr "想要加入农业合作社？创建一个农田NFT"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
 msgid "Want to earn more Chives? Add more plots to your farm."
-msgstr "想要获得更多奇亚币？ 给你的农场多开垦一些农田吧。"
+msgstr "想要获得更多韭菜币？ 给你的农场多开垦一些农田吧。"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 msgid "Want to have a delay before the next plot starts?"
@@ -2574,11 +2574,11 @@ msgstr "权重是施加给所有子块包括目前这块的额外的困难度."
 
 #: src/components/selectKey/SelectKey.tsx:141
 msgid "Welcome to Chives. Please log in with an existing key, or create a new key."
-msgstr "欢迎来到奇亚。请用已有的密钥登录，或者创建一个新的密钥。"
+msgstr "欢迎来到韭菜。请用已有的密钥登录，或者创建一个新的密钥。"
 
 #: src/components/wallet/WalletAdd.tsx:66
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
-msgstr "欢迎使用奇亚! 下面的词语列表是你的钱包密语, 请务必严格完整的把它们记下来(保持顺序). 没有这段密语的话, 你就没办法找回钱包里的币. 千万也不要透露给别人."
+msgstr "欢迎使用韭菜! 下面的词语列表是你的钱包密语, 请务必严格完整的把它们记下来(保持顺序). 没有这段密语的话, 你就没办法找回钱包里的币. 千万也不要透露给别人."
 
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:316
 msgid "When you receive the setup info packet from your admin, enter it below to complete your Rate Limited Wallet setup:"
@@ -2742,7 +2742,7 @@ msgstr "{currencyCode} 区块奖励"
 
 #: src/components/farm/card/FarmCardTotalChivesFarmed.tsx:29
 msgid "{currencyCode} Total Chives Farmed"
-msgstr "{currencyCode} 收获的奇亚币总计"
+msgstr "{currencyCode} 收获的韭菜币总计"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 msgid "{currencyCode} User Transaction Fees"

@@ -49,7 +49,7 @@ msgstr "Комбайнът е услуга, работеща на машина, 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chives Blockchain"
-msgstr "Относно Чиа Блокчейн"
+msgstr "Относно Chives Блокчейн"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -323,11 +323,11 @@ msgstr "Чат в KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "Чиа"
+msgstr "Chives"
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "Чиа блокчейн Wiki"
+msgstr "Chives блокчейн Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Chives Wallet"
@@ -1579,7 +1579,7 @@ msgstr "Филтър за преминали плотове"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 msgid "Plots are allocated space on your hard drive used to farm and earn Chives. <0>Learn more</0>"
-msgstr "Плотовете са разпределено място на вашия хард диск, които се ползват за фармете и печелене на Чиа. <0>Научете повече</0>"
+msgstr "Плотовете са разпределено място на вашия хард диск, които се ползват за фармете и печелене на Chives. <0>Научете повече</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 msgid "Plotting"

@@ -61,7 +61,7 @@ msgstr ""
 #: src/electron/main.tsx:423
 #: src/electron/main.tsx:510
 #~ msgid "About Chives Blockchain"
-#~ msgstr "치아 블록체인에 대하여"
+#~ msgstr "Chives 블록체인에 대하여"
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
@@ -378,7 +378,7 @@ msgstr "키베이스에서 채팅하기"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "치아"
+msgstr "Chives"
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:25
 #: src/components/wallet/create/WalletCreateList.tsx:32
@@ -387,11 +387,11 @@ msgstr ""
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "치아 블록체인 위키"
+msgstr "Chives 블록체인 위키"
 
 #: src/components/wallet/standard/WalletStandard.tsx:23
 msgid "Chives Wallet"
-msgstr "치아 지갑"
+msgstr "Chives 지갑"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 #~ msgid "Choose Number of Plots"
@@ -835,7 +835,7 @@ msgstr "편집"
 
 #: src/components/wallet/WalletImport.tsx:94
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chives wallet."
-msgstr "치아 지갑을 복구하기 위해서 24자로 된 니모닉 단어를 입력하세요."
+msgstr "Chives 지갑을 복구하기 위해서 24자로 된 니모닉 단어를 입력하세요."
 
 #: src/components/farm/card/FarmCard.tsx:57
 msgid "Error"
@@ -847,7 +847,7 @@ msgstr ""
 
 #: src/components/wallet/WalletSend.tsx:289
 #~ msgid "Error: Cannot send chives to coloured address. Please enter a chives address."
-#~ msgstr "에러: 치아를 컬러드 주소로 보낼 수 없습니다. 치아 주소를 입력하세요."
+#~ msgstr "에러: Chives를 컬러드 주소로 보낼 수 없습니다. Chives 주소를 입력하세요."
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 #~ msgid "Estimated Network Space"
