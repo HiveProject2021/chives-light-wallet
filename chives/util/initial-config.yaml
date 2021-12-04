@@ -284,9 +284,11 @@ full_node:
 
   # Run multiple nodes with different databases by changing the database_path
   database_path: db/blockchain_v1_CHALLENGE.sqlite
+  peer_db_path: db/peer_table_node.sqlite
   peers_file_path: db/peers.dat
   simulator_database_path: sim_db/simulator_blockchain_v1_CHALLENGE.sqlite
-  simulator_peers_file_path: sim_db/peer_table_node.dat
+  simulator_peers_file_path: sim_db/peer_table_node.dat  
+  simulator_peer_db_path: sim_db/peer_table_node.sqlite
 
   # If True, starts an RPC server at the following port
   start_rpc_server: True
