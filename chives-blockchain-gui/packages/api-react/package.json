@@ -1,0 +1,53 @@
+{
+  "name": "@chives/api-react",
+  "author": "Chives Network <hello@chivescoin.org> (https://chivescoin.org/)",
+  "description": "Chives API react store library",
+  "productName": "Chives Blockchain",
+  "private": true,
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=12.20.0"
+  },
+  "main": "dist/index.js",
+  "module": "dist/esm.js",
+  "scripts": {
+    "build": "npm run build:js",
+    "build:js": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "build:types": "tsc --emitDeclarationOnly"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.16.3",
+    "core-js": "^3.19.1",
+    "debug": "^4.3.2",
+    "lodash": "^4.17.21",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "peerDependencies": {
+    "@chives/api": "^1.0.0",
+    "@reduxjs/toolkit": "^1.6.2",
+    "react-redux": "^7.2.6"
+  },
+  "devDependencies": {
+    "@babel/core": "7.16.0",
+    "@chives/api": "^1.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/plugin-proposal-export-default-from": "^7.16.0",
+    "@babel/plugin-transform-runtime": "^7.16.0",
+    "@babel/preset-env": "7.16.0",
+    "@babel/preset-typescript": "7.16.0",
+    "@reduxjs/toolkit": "^1.6.2",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@types/core-js": "^2.5.5",
+    "@types/lodash": "^4.14.176",
+    "@types/node": "^16.11.7",
+    "@types/react-redux": "^7.1.20",
+    "cross-env": "^7.0.3",
+    "react-redux": "^7.2.6",
+    "rollup": "^2.59.0",
+    "rollup-plugin-node-externals": "^2.2.0",
+    "typescript": "^4.4.4"
+  }
+}

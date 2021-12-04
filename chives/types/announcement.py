@@ -1,0 +1,19 @@
+from dataclasses import dataclass
+from typing import Optional
+
+from chives.types.blockchain_format.sized_bytes import bytes32
+from chives.util.hash import std_hash
+
+
+@dataclass(frozen=True)
+class Announcement:
+    origin_info: bytes32
+    message: bytes
+    morph_bytes: Optional[bytes] = None  # CATs morph their announcements and other puzzles may choose to do so too
+
+    def name(self) -> bytes32:
+        if self.morph_bytes is not None:
+            message = std_hash(self.morph_bytes + self.message)
+        else:
+            message = self.message
+        return std_hash(bytes(self.origin_info + message))
