@@ -15,7 +15,7 @@ if [ "$(id -u)" = 0 ]; then
 fi
 
 # Allows overriding the branch or commit to build in chives-blockchain-gui
-SUBMODULE_BRANCH=$1
+SUBMODULE_BRANCH=main
 
 UBUNTU=false
 # Manage npm and other install requirements on an OS specific basis
