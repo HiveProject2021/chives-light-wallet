@@ -17,7 +17,7 @@ MAX_COST = int(1e15)
 COST_PER_BYTE = int(12000)
 
 
-DESERIALIZE_MOD = load_clvm("chiveslisp_deserialisation.clvm", package_or_requirement="chives.wallet.puzzles")
+DESERIALIZE_MOD = load_clvm("chialisp_deserialisation.clvm", package_or_requirement="chives.wallet.puzzles")
 
 
 GENERATOR_CODE = """

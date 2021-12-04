@@ -7,7 +7,7 @@ from chives.types.blockchain_format.program import Program
 from chives.types.blockchain_format.sized_bytes import bytes32
 from chives.types.condition_opcodes import ConditionOpcode
 from chives.util.ints import uint64
-from chives.wallet.chiveslisp import sexp
+from chives.wallet.chialisp import sexp
 from chives.wallet.puzzles.load_clvm import load_clvm
 
 RATE_LIMITED_MODE = 1

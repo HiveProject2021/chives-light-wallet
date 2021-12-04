@@ -9,7 +9,7 @@ wallet_program_files = set(
     [
         "chives/wallet/puzzles/calculate_synthetic_public_key.clvm",
         "chives/wallet/puzzles/cat.clvm",
-        "chives/wallet/puzzles/chiveslisp_deserialisation.clvm",
+        "chives/wallet/puzzles/chialisp_deserialisation.clvm",
         "chives/wallet/puzzles/rom_bootstrap_generator.clvm",
         "chives/wallet/puzzles/generator_for_single_coin.clvm",
         "chives/wallet/puzzles/genesis-by-coin-id-with-0.clvm",

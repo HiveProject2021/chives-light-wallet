@@ -1,6 +1,6 @@
 import pytest
 
-from chives.wallet.chiveslisp import (
+from chives.wallet.chialisp import (
     apply,
     args,
     cons,
@@ -17,7 +17,7 @@ from chives.wallet.chiveslisp import (
 )
 
 
-class TestChiveslisp:
+class Testchialisp:
     def test_sexp(self):
         assert sexp() == "()"
         assert sexp(1) == "(1)"
