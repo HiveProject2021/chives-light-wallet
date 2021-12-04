@@ -85,6 +85,13 @@ fi
 # Ubuntu special cases above.
 if [ ! "$CI" ]; then
 	
+	echo "Running git submodule update --init --recursive."
+	echo ""
+	git submodule update --init --recursive
+	echo "Running git submodule update."
+	echo ""
+	git submodule update
+	
 	cd chives-blockchain-gui
 
 	npm install
