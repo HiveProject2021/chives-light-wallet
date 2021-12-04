@@ -753,7 +753,18 @@ def validate_unfinished_header_block(
             != constants.GENESIS_PRE_FARM_FARMER_PUZZLE_HASH
         ):
             return None, ValidationError(Err.INVALID_PREFARM)
+        if (
+            header_block.foliage.foliage_block_data.community_reward_puzzle_hash
+            != constants.GENESIS_PRE_FARM_COMMUNITY_PUZZLE_HASH
+        ):
+            return None, ValidationError(Err.INVALID_COMMUNITY)
     else:
+        #20A. Check Community Reward Puzzle Hash
+        if (
+            header_block.foliage.foliage_block_data.community_reward_puzzle_hash
+            != constants.GENESIS_PRE_FARM_COMMUNITY_PUZZLE_HASH
+        ):
+            return None, ValidationError(Err.INVALID_COMMUNITY)
         # 20b. If pospace has a pool pk, heck pool target signature. Should not check this for genesis block.
         if header_block.reward_chain_block.proof_of_space.pool_public_key is not None:
             assert header_block.reward_chain_block.proof_of_space.pool_contract_puzzle_hash is None

@@ -5,7 +5,7 @@ from typing import Callable, Dict, List, Optional, Tuple, Any
 
 from blspy import PrivateKey, G1Element
 
-from chives.consensus.block_rewards import calculate_base_farmer_reward
+from chives.consensus.block_rewards import calculate_base_community_reward, calculate_base_farmer_reward, calculate_pool_reward
 from chives.pools.pool_wallet import PoolWallet
 from chives.pools.pool_wallet_info import create_pool_state, FARMING_TO_POOL, PoolWalletInfo, PoolState
 from chives.protocols.protocol_message_types import ProtocolMessageTypes
@@ -1086,18 +1086,23 @@ class WalletRpcApi:
                     continue
                 pool_reward_amount += record.amount
             height = record.height_farmed(self.service.constants.GENESIS_CHALLENGE)
-            if record.type == TransactionType.FEE_REWARD:
-                fee_amount += record.amount - calculate_base_farmer_reward(height)
-                farmer_reward_amount += calculate_base_farmer_reward(height)
-            if height > last_height_farmed:
-                last_height_farmed = height
-            amount += record.amount
+            # Chives Network Code
+            # Do not need to calculate the Community Rewards Amount To Wallet Card
+            # 只添加了一行代码,余下的代码只是做了缩进
+            if( uint64(calculate_base_community_reward(height)) != uint64(record.amount) ):
+                if record.type == TransactionType.FEE_REWARD:
+                    fee_amount += record.amount - calculate_base_farmer_reward(height)
+                    farmer_reward_amount += calculate_base_farmer_reward(height)
+                if height > last_height_farmed:
+                    last_height_farmed = height
+                amount += record.amount
 
         assert amount == pool_reward_amount + farmer_reward_amount + fee_amount
         return {
             "farmed_amount": amount,
             "pool_reward_amount": pool_reward_amount,
             "farmer_reward_amount": farmer_reward_amount,
+            "community_reward_amount": 0,
             "fee_amount": fee_amount,
             "last_height_farmed": last_height_farmed,
         }

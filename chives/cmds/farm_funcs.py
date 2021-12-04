@@ -214,7 +214,7 @@ async def summary(
     if amounts is not None:
         print(f"Total chives farmed: {amounts['farmed_amount'] / units['chives']}")
         print(f"User transaction fees: {amounts['fee_amount'] / units['chives']}")
-        print(f"Block rewards: {(amounts['farmer_reward_amount'] + amounts['pool_reward_amount']) / units['chives']}")
+        print(f"Block rewards: {(amounts['farmer_reward_amount'] + amounts['community_reward_amount'] + amounts['pool_reward_amount']) / units['chives']}")
         print(f"Last height farmed: {amounts['last_height_farmed']}")
 
     class PlotStats:
