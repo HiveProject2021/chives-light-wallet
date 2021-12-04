@@ -84,23 +84,8 @@ fi
 # Pipelines directly, so skip unless you are completing a source/developer install.
 # Ubuntu special cases above.
 if [ ! "$CI" ]; then
-	echo "Running git submodule update --init --recursive."
-	echo ""
-	git submodule update --init --recursive
-	echo "Running git submodule update."
-	echo ""
-	git submodule update
+	
 	cd chives-blockchain-gui
-
-	if [ "$SUBMODULE_BRANCH" ];
-	then
-    git fetch
-		git checkout "$SUBMODULE_BRANCH"
-    git pull
-		echo ""
-		echo "Building the GUI with branch $SUBMODULE_BRANCH"
-		echo ""
-	fi
 
 	npm install
 	# Audit fix doesn't currently play nice with lerna
