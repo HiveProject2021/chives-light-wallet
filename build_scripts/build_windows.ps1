@@ -113,15 +113,6 @@ $packageName = "Chives-$packageVersion"
 Write-Output "packageName is $packageName"
 
 Write-Output "   ---"
-Write-Output "fix version in package.json"
-choco install jq
-cp package.json package.json.orig
-jq --arg VER "$env:CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.json
-rm package.json
-mv temp.json package.json
-Write-Output "   ---"
-
-Write-Output "   ---"
 Write-Output "electron-packager"
 electron-packager . Chives --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chives.ico --app-version=$packageVersion --executable-name=chives-blockchain
 Write-Output "   ---"
