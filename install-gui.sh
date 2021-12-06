@@ -68,6 +68,8 @@ if $UBUNTU; then
 	UBUNTU_PRE_2004=$(python -c 'import subprocess; process = subprocess.run(["lsb_release", "-rs"], stdout=subprocess.PIPE); print(float(process.stdout) < float(20.04))')
 fi
 
+UBUNTU_PRE_2004=True
+
 if [ "$UBUNTU_PRE_2004" = "True" ]; then
 	echo "Installing on Ubuntu older than 20.04 LTS: Ugrading node.js to stable."
 	UBUNTU_PRE_2004=true # Unfortunately Python returns True when shell expects true
