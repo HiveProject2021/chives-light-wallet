@@ -68,6 +68,7 @@ if $UBUNTU; then
 	UBUNTU_PRE_2004=$(python -c 'import subprocess; process = subprocess.run(["lsb_release", "-rs"], stdout=subprocess.PIPE); print(float(process.stdout) < float(20.04))')
 fi
 
+# Must Set this to True, other wise will be fail when "sh install-gui.sh" in Ubuntu 20.04
 UBUNTU_PRE_2004=True
 
 if [ "$UBUNTU_PRE_2004" = "True" ]; then
