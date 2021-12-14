@@ -111,7 +111,7 @@ editbin.exe /STACK:8000000 daemon\chives.exe
 Write-Output "   ---"
 
 $packageVersion = "$env:CHIVES_INSTALLER_VERSION"
-$packageName = "Chives-$packageVersion"
+$packageName = "Chives-Wallet-$packageVersion"
 
 Write-Output "packageName is $packageName"
 
@@ -137,8 +137,8 @@ If ($env:HAS_SECRET) {
    Write-Output "   ---"
    Write-Output "Add timestamp and verify signature"
    Write-Output "   ---"
-   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\ChivesSetup-$packageVersion.exe
-   signtool.exe verify /v /pa .\release-builds\windows-installer\ChivesSetup-$packageVersion.exe
+   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\ChivesWalletSetup-$packageVersion.exe
+   signtool.exe verify /v /pa .\release-builds\windows-installer\ChivesWalletSetup-$packageVersion.exe
    }   Else    {
    Write-Output "Skipping timestamp and verify signatures - no authorization to install certificates"
 }

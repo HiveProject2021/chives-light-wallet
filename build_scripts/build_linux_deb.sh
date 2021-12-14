@@ -77,7 +77,7 @@ fi
 mv $DIR_NAME ../../../build_scripts/dist/
 cd ../../../build_scripts || exit
 
-echo "Create chives-$CHIVES_INSTALLER_VERSION.deb"
+echo "Create Chives-Wallet-$CHIVES_INSTALLER_VERSION.deb"
 rm -rf final_installer
 mkdir final_installer
 electron-installer-debian --src dist/$DIR_NAME/ --dest final_installer/ \

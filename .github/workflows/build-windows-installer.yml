@@ -144,14 +144,14 @@ jobs:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
         ls ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/builds/
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/protocol_and_cats_rebased/
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/builds/
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/protocol_and_cats_rebased/
 
     - name: Create Checksums
       env:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
-         certutil.exe -hashfile ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe SHA256 > ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256
+         certutil.exe -hashfile ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe SHA256 > ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256
          ls ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\
 
     - name: Install py3createtorrent
@@ -162,7 +162,7 @@ jobs:
     - name: Create torrent
       if: startsWith(github.ref, 'refs/tags/')
       run: |
-        py3createtorrent -f -t udp://tracker.opentrackr.org:1337/announce ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe -o ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.torrent --webseed https://download-chives-net.s3.us-west-2.amazonaws.com/install/ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe
+        py3createtorrent -f -t udp://tracker.opentrackr.org:1337/announce ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe -o ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.torrent --webseed https://download-chives-net.s3.us-west-2.amazonaws.com/install/ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe
         ls
 
     - name: Upload Beta Installer
@@ -170,16 +170,16 @@ jobs:
       env:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/beta/ChivesSetup-latest-beta.exe
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256 s3://download-chives-net/beta/ChivesSetup-latest-beta.exe.sha256
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/beta/ChivesWalletSetup-latest-beta.exe
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256 s3://download-chives-net/beta/ChivesWalletSetup-latest-beta.exe.sha256
 
     - name: Upload CATs Beta Installer
       if: steps.check_secrets.outputs.HAS_AWS_SECRET && github.ref == 'refs/heads/protocol_and_cats_rebased'
       env:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/cats-beta-installers/ChivesSetup-latest-cats-beta.exe
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256 s3://download-chives-net/cats-beta-installers/ChivesSetup-latest-cats-beta.exe.sha256
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/cats-beta-installers/ChivesWalletSetup-latest-cats-beta.exe
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256 s3://download-chives-net/cats-beta-installers/ChivesWalletSetup-latest-cats-beta.exe.sha256
 
     - name: Upload Release Files
       if: steps.check_secrets.outputs.HAS_AWS_SECRET && startsWith(github.ref, 'refs/tags/')
@@ -187,9 +187,9 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{ secrets.INSTALLER_UPLOAD_KEY }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.INSTALLER_UPLOAD_SECRET }}
       run: |
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/install/
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256 s3://download-chives-net/install/
-        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.torrent s3://download-chives-net/torrents/
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe s3://download-chives-net/install/
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.sha256 s3://download-chives-net/install/
+        aws s3 cp ${{ github.workspace }}\chives-blockchain-gui\release-builds\windows-installer\ChivesWalletSetup-${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}.exe.torrent s3://download-chives-net/torrents/
 
     - name: Get tag name
       if: startsWith(github.ref, 'refs/tags/')

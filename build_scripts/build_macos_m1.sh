@@ -87,10 +87,10 @@ fi
 mv Chives-darwin-arm64 ../../../build_scripts/dist/
 cd ../../../build_scripts || exit
 
-DMG_NAME="Chives-$CHIVES_INSTALLER_VERSION-arm64.dmg"
+DMG_NAME="Chives-Wallet-$CHIVES_INSTALLER_VERSION-arm64.dmg"
 echo "Create $DMG_NAME"
 mkdir final_installer
-electron-installer-dmg dist/Chives-darwin-arm64/Chives.app Chives-$CHIVES_INSTALLER_VERSION-arm64 \
+electron-installer-dmg dist/Chives-darwin-arm64/Chives.app Chives-Wallet-$CHIVES_INSTALLER_VERSION-arm64 \
 --overwrite --out final_installer
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
