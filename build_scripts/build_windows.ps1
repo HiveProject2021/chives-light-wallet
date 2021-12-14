@@ -74,7 +74,10 @@ Write-Output "Copy chives executables to chives-blockchain-gui\"
 Write-Output "   ---"
 Copy-Item "dist\daemon" -Destination "..\chives-blockchain-gui\packages\wallet" -Recurse
 Set-Location -Path "..\chives-blockchain-gui" -PassThru
-Copy-Item "win_code_sign_cert.p12" -Destination "packages\wallet\"
+# We need the code sign cert in the gui subdirectory so we can actually sign the UI package
+If ($env:HAS_SECRET) {
+    Copy-Item "win_code_sign_cert.p12" -Destination "packages\wallet\"
+}
 
 git status
 
@@ -115,8 +118,6 @@ Write-Output "packageName is $packageName"
 Write-Output "   ---"
 Write-Output "electron-packager"
 electron-packager . Chives --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chives.ico --app-version=$packageVersion --executable-name=chives-blockchain
-Write-Output "   ---"
-
 Write-Output "   ---"
 Write-Output "node winstaller.js"
 node winstaller.js

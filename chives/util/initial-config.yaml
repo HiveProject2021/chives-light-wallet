@@ -18,53 +18,6 @@ network_overrides: &network_overrides
       GENESIS_PRE_FARM_FARMER_PUZZLE_HASH: "5b848b19bd465b2edf93428e553bfeafcee17699cce5fbc3587fc281c2ac17d4"
       GENESIS_PRE_FARM_COMMUNITY_PUZZLE_HASH: "4e7d87c3752c0b4a1f25ec7ac5c10f347c39406e6753220043f28e5a450e0388"
     testnet0:
-      MIN_PLOT_SIZE: 18
-      GENESIS_CHALLENGE: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-      NETWORK_TYPE: 1
-      GENESIS_PRE_FARM_POOL_PUZZLE_HASH: "1a86fab63fc8f4fcfe1708b85c56e0ef9d70ca17278e6c15f9713b148ecf920a"
-      GENESIS_PRE_FARM_FARMER_PUZZLE_HASH: "5b848b19bd465b2edf93428e553bfeafcee17699cce5fbc3587fc281c2ac17d4"
-      GENESIS_PRE_FARM_COMMUNITY_PUZZLE_HASH: "4e7d87c3752c0b4a1f25ec7ac5c10f347c39406e6753220043f28e5a450e0388"
-    testnet2:
-      MIN_PLOT_SIZE: 18
-      GENESIS_CHALLENGE: ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
-      NETWORK_TYPE: 1
-      INITIAL_FREEZE_PERIOD: 100
-      DIFFICULTY_CONSTANT_FACTOR: 10052721566054
-      GENESIS_PRE_FARM_POOL_PUZZLE_HASH: "1a86fab63fc8f4fcfe1708b85c56e0ef9d70ca17278e6c15f9713b148ecf920a"
-      GENESIS_PRE_FARM_FARMER_PUZZLE_HASH: "5b848b19bd465b2edf93428e553bfeafcee17699cce5fbc3587fc281c2ac17d4"
-      GENESIS_PRE_FARM_COMMUNITY_PUZZLE_HASH: "4e7d87c3752c0b4a1f25ec7ac5c10f347c39406e6753220043f28e5a450e0388"
-    testnet3:
-      DIFFICULTY_CONSTANT_FACTOR: 10052721566054
-      GENESIS_CHALLENGE: ca7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015af
-      GENESIS_PRE_FARM_FARMER_PUZZLE_HASH: 5b848b19bd465b2edf93428e553bfeafcee17699cce5fbc3587fc281c2ac17d4
-      GENESIS_PRE_FARM_POOL_PUZZLE_HASH: 1a86fab63fc8f4fcfe1708b85c56e0ef9d70ca17278e6c15f9713b148ecf920a
-      GENESIS_PRE_FARM_COMMUNITY_PUZZLE_HASH: "4e7d87c3752c0b4a1f25ec7ac5c10f347c39406e6753220043f28e5a450e0388"
-      MIN_PLOT_SIZE: 18
-      NETWORK_TYPE: 1
-      MEMPOOL_BLOCK_BUFFER: 10
-    testnet4:
-      DIFFICULTY_CONSTANT_FACTOR: 10052721566054
-      GENESIS_CHALLENGE: dd7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015af
-      GENESIS_PRE_FARM_FARMER_PUZZLE_HASH: 5b848b19bd465b2edf93428e553bfeafcee17699cce5fbc3587fc281c2ac17d4
-      GENESIS_PRE_FARM_POOL_PUZZLE_HASH: 1a86fab63fc8f4fcfe1708b85c56e0ef9d70ca17278e6c15f9713b148ecf920a
-      GENESIS_PRE_FARM_COMMUNITY_PUZZLE_HASH: "4e7d87c3752c0b4a1f25ec7ac5c10f347c39406e6753220043f28e5a450e0388"
-      MIN_PLOT_SIZE: 18
-      NETWORK_TYPE: 1
-      MEMPOOL_BLOCK_BUFFER: 10
-      EPOCH_BLOCKS: 768
-      DIFFICULTY_STARTING: 1
-    testnet5:
-      DIFFICULTY_CONSTANT_FACTOR: 10052721566054
-      GENESIS_CHALLENGE: ee7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015af
-      GENESIS_PRE_FARM_FARMER_PUZZLE_HASH: 5b848b19bd465b2edf93428e553bfeafcee17699cce5fbc3587fc281c2ac17d4
-      GENESIS_PRE_FARM_POOL_PUZZLE_HASH: 1a86fab63fc8f4fcfe1708b85c56e0ef9d70ca17278e6c15f9713b148ecf920a
-      MIN_PLOT_SIZE: 18
-      NETWORK_TYPE: 1
-      MEMPOOL_BLOCK_BUFFER: 10
-      EPOCH_BLOCKS: 768
-      DIFFICULTY_STARTING: 1
-    testnet7:
-      AGG_SIG_ME_ADDITIONAL_DATA: 117816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015af
       DIFFICULTY_CONSTANT_FACTOR: 10052721566054
       GENESIS_CHALLENGE: 117816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015af
       GENESIS_PRE_FARM_FARMER_PUZZLE_HASH: 5b848b19bd465b2edf93428e553bfeafcee17699cce5fbc3587fc281c2ac17d4
@@ -79,16 +32,6 @@ network_overrides: &network_overrides
       address_prefix: "xcc"
       default_full_node_port: 9699
     testnet0:
-      address_prefix: "txcc"
-    testnet1:
-      address_prefix: "txcc"
-    testnet2:
-      address_prefix: "txcc"
-    testnet3:
-      address_prefix: "txcc"
-    testnet4:
-      address_prefix: "txcc"
-    testnet7:
       address_prefix: "txcc"
       default_full_node_port: 59699
 
@@ -245,7 +188,7 @@ timelord:
   # without slowing down but running more than 1 with fast_algorithm will
   # run each vdf_client slower.
   fast_algorithm: False
-  # Bluebox (sanatizing Timelord):
+  # Bluebox (sanitizing Timelord):
   # If set 'True', the timelord will create compact proofs of time, instead of
   # extending the chain. The attribute 'fast_algorithm' won't apply if timelord
   # is running in sanitizer_mode.
@@ -411,7 +354,8 @@ wallet:
 
   # see description for full_node.db_sync
   db_sync: auto
-
+  # Allow connecting to remote peers for sync
+  connect_to_unknown_peers: True
   # The minimum height that we care about for our transactions. Set to zero
   # If we are restoring from private key and don't know the height.
   starting_height: 0
@@ -426,7 +370,7 @@ wallet:
 
   testing: False
   database_path: wallet/db/blockchain_wallet_v1_CHALLENGE_KEY.sqlite
-  wallet_peers_file_path: wallet/db/wallet_peers.dat
+  wallet_peers_path: wallet/db/wallet_peers.dat
 
   logging: *logging
   network_overrides: *network_overrides
@@ -441,6 +385,9 @@ wallet:
   introducer_peer:
     host: introducer.chivescoin.org # Chives AWS introducer IPv4/IPv6
     port: 9699
+
+  dns_servers:
+    - "dns-introducer.chivescoin.org"
 
   ssl:
     private_crt:  "config/ssl/wallet/private_wallet.crt"

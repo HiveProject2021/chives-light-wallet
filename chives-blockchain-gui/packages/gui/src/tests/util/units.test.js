@@ -112,14 +112,14 @@ describe('units', () => {
     });
     it('updates an existing display', () => {
       units.setDisplay('chives', {
-        format: '{amount} TXCH',
+        format: '{amount} TXCC',
         fractionDigits: 0,
       });
 
       const result = units.getDisplay('chives');
 
       expect(result).toEqual({
-        format: '{amount} TXCH',
+        format: '{amount} TXCC',
         fractionDigits: 0,
       });
     });

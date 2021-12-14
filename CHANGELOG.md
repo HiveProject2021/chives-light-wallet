@@ -706,7 +706,7 @@ Batch process weight proof epochs in groups of 900 to fit below May 2020 sqlite 
 - `requirements-dev.txt` has been removed in favor of the CI actions and test scripts.
 - We have moved to a new and much higher scalability download.chivescoin.org to support the mainnet launch flag and additional download demand.
 - To always get the latest testnet and then mainnet installers you can now use a latest URL: [Windows](https://download.chivescoin.org/latest/Setup-Win64.exe) and [MacOS x86_64](https://download.chivescoin.org/latest/Setup-MacOS.dmg).
-- Chives wheels not on Pypi and some dependecies not found there also are now on pypi.chivescoin.org.
+- Chia wheels not on Pypi and some dependecies not found there also are now on pypi.chia.net.
 - Additional typing has been added to the Python code with thanks to @jespino.
 - Cryptography and Keyring have been bumped to their current releases.
 - PRs and commits to the chives-blockchain-gui repository will automatically have their locales updated.
