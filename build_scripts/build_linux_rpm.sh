@@ -63,7 +63,7 @@ cp package.json package.json.orig
 jq --arg VER "$CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
 electron-packager . chives-wallet --asar.unpack="**/daemon/**" --platform=linux \
---icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.blockchain \
+--icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.wallet \
 --appVersion=$CHIVES_INSTALLER_VERSION --executable-name=chives-wallet
 LAST_EXIT_CODE=$?
 

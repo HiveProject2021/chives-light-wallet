@@ -125,7 +125,7 @@ Write-Output "   ---"
 
 # Specific to protocol_and_cats_rebased branch, move these directories to where they used to be so the rest of the CI
 # finds them where it expects to
-Copy-Item "Chives-win32-x64" -Destination "..\..\" -Recurse
+Copy-Item "Chives Light Wallet-win32-x64" -Destination "..\..\" -Recurse
 Copy-Item "release-builds" -Destination "..\..\" -Recurse
 
 # Move back to the root of the gui directory

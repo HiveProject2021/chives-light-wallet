@@ -15,7 +15,7 @@ function getInstallerConfig () {
 
   return Promise.resolve({
     name: "chives-wallet",
-    appDirectory: path.join(rootPath, 'Chives-win32-x64'),
+    appDirectory: path.join(rootPath, 'Chives Light Wallet-win32-x64'),
     authors: 'Chives Network',
     version: process.env.CHIVES_INSTALLER_VERSION,
     noMsi: true,

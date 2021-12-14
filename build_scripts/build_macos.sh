@@ -60,7 +60,7 @@ cp package.json package.json.orig
 jq --arg VER "$CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
 electron-packager . "Chives Light Wallet" --asar.unpack="**/daemon/**" --platform=darwin \
---icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.blockchain \
+--icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.wallet \
 --appVersion=$CHIVES_INSTALLER_VERSION
 LAST_EXIT_CODE=$?
 
@@ -101,7 +101,7 @@ fi
 if [ "$NOTARIZE" == true ]; then
 	echo "Notarize $DMG_NAME on ci"
 	cd final_installer || exit
-  notarize-cli --file=$DMG_NAME --bundle-id net.chives.blockchain \
+  notarize-cli --file=$DMG_NAME --bundle-id net.chives.wallet \
 	--username "$APPLE_NOTARIZE_USERNAME" --password "$APPLE_NOTARIZE_PASSWORD"
   echo "Notarization step complete"
 else
@@ -112,7 +112,7 @@ fi
 #
 # Ask for username and password. password should be an app specific password.
 # Generate app specific password https://support.apple.com/en-us/HT204397
-# xcrun altool --notarize-app -f Chives-0.1.X.dmg --primary-bundle-id net.chives.blockchain -u username -p password
+# xcrun altool --notarize-app -f Chives-0.1.X.dmg --primary-bundle-id net.chives.wallet -u username -p password
 # xcrun altool --notarize-app; -should return REQUEST-ID, use it in next command
 #
 # Wait until following command return a success message".
