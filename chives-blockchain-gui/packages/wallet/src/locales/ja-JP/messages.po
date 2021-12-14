@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: chives-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: ja\n"
-"X-Crowdin-File: /[Chives-Network.chives-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[HiveProject2021.chives-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 #~ msgid "*Want to explore Chives’s blocks further? Check out <0>Chives Explorer</0> built by an open source developer."
-#~ msgstr "*Chivesのブロックをさらに調べたいですか？オープンソース開発者に提供していただいた <0>Chives Explorer</0> を是非ご覧ください。"
+#~ msgstr "*チアのブロックをさらに調べたいですか？オープンソース開発者に提供していただいた <0>Chives Explorer</0> を是非ご覧ください。"
 
 #: src/components/wallet/WalletHistory.tsx:111
 msgid "+"
@@ -61,7 +61,7 @@ msgstr ""
 #: src/electron/main.tsx:423
 #: src/electron/main.tsx:510
 #~ msgid "About Chives Blockchain"
-#~ msgstr "Chivesブロックチェーンについて"
+#~ msgstr "チアブロックチェーンについて"
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
@@ -282,7 +282,7 @@ msgstr "残高"
 
 #: src/components/block/Block.jsx:337
 #~ msgid "Block at height {0} in the Chives blockchain"
-#~ msgstr "Chivesブロックチェーン内の高さ {0} のブロック"
+#~ msgstr "チアブロックチェーン内の高さ {0} のブロック"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -378,7 +378,7 @@ msgstr "Keybase でチャット"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "Chives"
+msgstr "チア"
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:25
 #: src/components/wallet/create/WalletCreateList.tsx:32
@@ -387,11 +387,11 @@ msgstr ""
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "Chivesブロックチェーンの Wiki"
+msgstr "チアブロックチェーンの Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:23
 msgid "Chives Wallet"
-msgstr "Chivesウォレット"
+msgstr "チアウォレット"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 #~ msgid "Choose Number of Plots"
@@ -835,7 +835,7 @@ msgstr "編集"
 
 #: src/components/wallet/WalletImport.tsx:94
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chives wallet."
-msgstr "Chivesウォレットを復元するには、24語の合言葉を入力してください。"
+msgstr "チアウォレットを復元するには、24語の合言葉を入力してください。"
 
 #: src/components/farm/card/FarmCard.tsx:57
 msgid "Error"
@@ -847,7 +847,7 @@ msgstr ""
 
 #: src/components/wallet/WalletSend.tsx:289
 #~ msgid "Error: Cannot send chives to coloured address. Please enter a chives address."
-#~ msgstr "エラー: Chivesは色付きのアドレスには送れません。Chivesのアドレスを入力してください。"
+#~ msgstr "エラー: チアは色付きのアドレスには送れません。チアのアドレスを入力してください。"
 
 #: src/components/fullNode/card/FullNodeEstimatedNetworkSpace.tsx:20
 #~ msgid "Estimated Network Space"
@@ -952,7 +952,7 @@ msgid "Fee"
 msgstr "手数料"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXCC)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1154,15 +1154,15 @@ msgstr "インターバル"
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile."
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-#~ msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgid "Join a pool and get more consistent XCC farming rewards. Create a plot NFT and assign your new plots to a group."
 #~ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
@@ -1429,7 +1429,7 @@ msgstr "同期されていません"
 #~ msgstr "見つからない耕地"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:188
-#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
+#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCC reward for pooling plots."
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
@@ -1707,7 +1707,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 #~ msgid "Plots are allocated space on your hard drive used to farm and earn Chives. <0>Learn more</0>"
-#~ msgstr "耕地とは、Chivesを収穫し、得るためにハードドライブ上に確保する領域です。<0>詳しく</0>"
+#~ msgstr "耕地とは、チアを収穫し、得るためにハードドライブ上に確保する領域です。<0>詳しく</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 #~ msgid "Plotting"
@@ -2118,7 +2118,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-#~ msgid "Self pool. When you win a block you will earn XCH rewards."
+#~ msgid "Self pool. When you win a block you will earn XCC rewards."
 #~ msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:164
@@ -2179,7 +2179,7 @@ msgstr "ログイン"
 #~ msgstr "最終ディレクトリを収穫機に追加せず、ディレクトリ内の耕地で耕作しません。"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCH farming rewards by joining a pool."
+#~ msgid "Smooth out your XCC farming rewards by joining a pool."
 #~ msgstr ""
 
 #: src/modules/message.js:568
@@ -2217,7 +2217,7 @@ msgstr "支払いインターバル長 (ブロック数)"
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:401
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:448
 msgid "Spending Limit (chives per interval): {0}"
-msgstr "支払い額上限 (Chives毎インターバル): {0}"
+msgstr "支払い額上限 (チア毎インターバル): {0}"
 
 #: src/constants/WalletName.ts:5
 msgid "Standard Wallet"
@@ -2294,23 +2294,23 @@ msgstr "同期中"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXCC Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXCC Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXCC Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXCC User Fees"
+#~ msgstr "TXCC User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXCC User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2392,7 +2392,7 @@ msgstr ""
 #~ msgstr "このブロック内の取引手数料の合計。農家への報酬となります。"
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCC address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 #~ msgstr ""
 
 #: src/components/plot/PlotsFailed.tsx:40
@@ -2423,7 +2423,7 @@ msgstr "この機能は GUI 限定です。"
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:23
 msgid "This is the amount of Chives that you can currently use to make transactions. It does not include pending farming rewards, pending incoming transactions, and Chives that you have just spent but is not yet in the blockchain."
-msgstr "取引に使用できるChivesの額です。承認待ちの耕作報酬、承認待ちの入金取引、及びブロックチェーンにまだ含まれていない消費Chivesはいずれも含まれていません。"
+msgstr "取引に使用できるチアの額です。承認待ちの耕作報酬、承認待ちの入金取引、及びブロックチェーンにまだ含まれていない消費チアはいずれも含まれていません。"
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:44
 msgid "This is the pending change, which are change coins which you have sent to yourself, but have not been confirmed yet."
@@ -2443,7 +2443,7 @@ msgstr "これが (まだブロックチェーンに含まれていない) 保�
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:16
 msgid "This is the total amount of chives in the blockchain at the current peak sub block that is controlled by your private keys. It includes frozen farming rewards, but not pending incoming and outgoing transactions."
-msgstr "現在の先端サブブロックにおいて、あなたの秘密鍵が所有している全Chivesの額です。凍結中の耕作報酬は含まれますが、承認待ちの入出金取引は反映されていません。"
+msgstr "現在の先端サブブロックにおいて、あなたの秘密鍵が所有している全チアの額です。凍結中の耕作報酬は含まれますが、承認待ちの入出金取引は反映されていません。"
 
 #: src/components/wallet/standard/WalletStandardCards.tsx:31
 msgid "This is the total balance + pending balance: it is what your balance will be after all pending transactions are confirmed."
@@ -2489,7 +2489,7 @@ msgstr "これが全残高 + 保留中残高です: 全ての保留中の取引�
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 #~ msgid "This version of Chives is no longer compatible with the blockchain and can not safely farm."
-#~ msgstr "ご使用のバージョンのChivesアプリはブロックチェーンと互換性が無く、安全に耕作できません。"
+#~ msgstr "ご使用のバージョンのチアアプリはブロックチェーンと互換性が無く、安全に耕作できません。"
 
 #: src/components/fullNode/FullNode.jsx:92
 #~ msgid "Time Created"
@@ -2769,7 +2769,7 @@ msgstr "ウォレット"
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
 #~ msgid "Want to earn more Chives? Add more plots to your farm."
-#~ msgstr "畑に耕地を増やしましょう。さらにChivesを得られますよ。"
+#~ msgstr "畑に耕地を増やしましょう。さらにチアを得られますよ。"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:86
 #~ msgid "Want to have a delay before the next plot starts?"
@@ -2797,7 +2797,7 @@ msgstr "注意: この鍵はプール報酬アドレスに使われています�
 
 #: src/components/selectKey/SelectKey.tsx:81
 msgid "Welcome to Chives. Please log in with an existing key, or create a new key."
-msgstr "Chivesにようこそ。お持ちの鍵でログインするか、新しく鍵を作成してください。"
+msgstr "チアにようこそ。お持ちの鍵でログインするか、新しく鍵を作成してください。"
 
 #: src/components/wallet/WalletAdd.tsx:85
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -2958,7 +2958,7 @@ msgstr "同期中"
 
 #: src/components/farm/card/FarmCardTotalChivesFarmed.tsx:29
 #~ msgid "{currencyCode} Total Chives Farmed"
-#~ msgstr "{currencyCode} 全収穫Chives"
+#~ msgstr "{currencyCode} 全収穫チア"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 #~ msgid "{currencyCode} User Transaction Fees"

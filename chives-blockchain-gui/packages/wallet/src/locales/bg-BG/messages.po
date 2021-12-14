@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: chives-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: bg\n"
-"X-Crowdin-File: /[Chives-Network.chives-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[HiveProject2021.chives-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -61,7 +61,7 @@ msgstr ""
 #: src/electron/main.tsx:423
 #: src/electron/main.tsx:510
 #~ msgid "About Chives Blockchain"
-#~ msgstr "Относно Chives Блокчейн"
+#~ msgstr "Относно Чиа Блокчейн"
 
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
@@ -378,7 +378,7 @@ msgstr "Чат в KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "Chives"
+msgstr "Чиа"
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:25
 #: src/components/wallet/create/WalletCreateList.tsx:32
@@ -387,7 +387,7 @@ msgstr ""
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "Chives блокчейн Wiki"
+msgstr "Чиа блокчейн Wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:23
 msgid "Chives Wallet"
@@ -952,7 +952,7 @@ msgid "Fee"
 msgstr "Такса"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXCC)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1154,15 +1154,15 @@ msgstr "Интервал"
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile."
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
 #~ msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-#~ msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgid "Join a pool and get more consistent XCC farming rewards. Create a plot NFT and assign your new plots to a group."
 #~ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
@@ -1429,7 +1429,7 @@ msgstr "Не е синхронизирано"
 #~ msgstr "Няма намерени полета"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:188
-#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
+#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCC reward for pooling plots."
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
@@ -1709,7 +1709,7 @@ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:35
 #~ msgid "Plots are allocated space on your hard drive used to farm and earn Chives. <0>Learn more</0>"
-#~ msgstr "Плотовете са разпределено място на вашия хард диск, които се ползват за фармете и печелене на Chives. <0>Научете повече</0>"
+#~ msgstr "Плотовете са разпределено място на вашия хард диск, които се ползват за фармете и печелене на Чиа. <0>Научете повече</0>"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:34
 #~ msgid "Plotting"
@@ -2120,7 +2120,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-#~ msgid "Self pool. When you win a block you will earn XCH rewards."
+#~ msgid "Self pool. When you win a block you will earn XCC rewards."
 #~ msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:164
@@ -2181,7 +2181,7 @@ msgstr "Вход"
 #~ msgstr "Пропуска добавянето на финална директория на Фармера за фармене"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCH farming rewards by joining a pool."
+#~ msgid "Smooth out your XCC farming rewards by joining a pool."
 #~ msgstr ""
 
 #: src/modules/message.js:568
@@ -2296,23 +2296,23 @@ msgstr "Синхронизиране"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXCC Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXCC Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXCC Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXCC User Fees"
+#~ msgstr "TXCC User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXCC User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2394,7 +2394,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCC address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
 #~ msgstr ""
 
 #: src/components/plot/PlotsFailed.tsx:40
