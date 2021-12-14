@@ -16,6 +16,7 @@ name: GitHub Super Linter
 # Start the job on all push #
 #############################
 on:
+  workflow-dispatch:
   push:
     branches-ignore:
       - 'main'

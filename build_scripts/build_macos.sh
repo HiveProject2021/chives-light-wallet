@@ -73,7 +73,7 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 fi
 
 if [ "$NOTARIZE" == true ]; then
-  electron-osx-sign Chives-darwin-x64/Chives.app --platform=darwin \
+  electron-osx-sign Chives\ Light\ Wallet-darwin-x64/Chives\ Light\ Wallet.app --platform=darwin \
   --hardened-runtime=true --provisioning-profile=chivesblockchain.provisionprofile \
   --entitlements=entitlements.mac.plist --entitlements-inherit=entitlements.mac.plist \
   --no-gatekeeper-assess
@@ -84,13 +84,13 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-mv Chives-darwin-x64 ../../../build_scripts/dist/
+mv Chives\ Light\ Wallet-darwin-x64 ../../../build_scripts/dist/
 cd ../../../build_scripts || exit
 
 DMG_NAME="Chives-Wallet-$CHIVES_INSTALLER_VERSION.dmg"
 echo "Create $DMG_NAME"
 mkdir final_installer
-electron-installer-dmg dist/Chives-darwin-x64/Chives.app Chives-Wallet-$CHIVES_INSTALLER_VERSION \
+electron-installer-dmg dist/Chives\ Light\ Wallet-darwin-x64/Chives\ Light\ Wallet.app Chives-Wallet-$CHIVES_INSTALLER_VERSION \
 --overwrite --out final_installer
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then

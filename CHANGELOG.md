@@ -1387,9 +1387,9 @@ that ci runs successfully complete from PRs or forked repositories.
 we expect to add in future releases.
 - The chives executable is now available if installing from the Windows or MacOS
 Graphical installer. Try `./chives -h` from
-`~\AppData\Local\Chives-Blockchain\app-0.1.8\resources\app.asar.unpacked\daemon\`
+`~\AppData\Local\Chives-Wallet\app-0.1.8\resources\app.asar.unpacked\daemon\`
 in Windows or
-`/Applications/Chives.app/Contents/Resources/app.asar.unpacked/daemon` on MacOS.
+`/Applications/Chives Light Wallet.app/Contents/Resources/app.asar.unpacked/daemon` on MacOS.
 
 ### Changed
 

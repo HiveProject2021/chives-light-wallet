@@ -1,6 +1,7 @@
 name: Test Install Scripts
 
 on:
+  worflow-dispatch:
   push:
     branches:
       - main
