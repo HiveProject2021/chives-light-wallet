@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
 msgid "*Want to explore Chives’s blocks further? Check out <0>Chives Explorer</0> built by an open source developer."
-msgstr "*Дали сакате да истражувате низ Чиа блокчејн? Погледнете го <0>Чиа Пребарувачот</0>, развиен од девелопер со отворен код."
+msgstr "*Дали сакате да истражувате низ Chives блокчејн? Погледнете го <0>Chives Пребарувачот</0>, развиен од девелопер со отворен код."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -49,7 +49,7 @@ msgstr "Жетвар е сервис кој работи на машината �
 #: src/electron/main.tsx:422
 #: src/electron/main.tsx:509
 msgid "About Chives Blockchain"
-msgstr "За Чиа Блокчејн"
+msgstr "За Chives Блокчејн"
 
 #: src/components/trading/ViewOffer.jsx:74
 msgid "Accept"
@@ -231,7 +231,7 @@ msgstr "Повторувања на ВДФ блокови"
 
 #: src/components/block/Block.jsx:337
 msgid "Block at height {0} in the Chives blockchain"
-msgstr "Блок на позиција {0} во Чиа блокчејнот"
+msgstr "Блок на позиција {0} во Chives блокчејнот"
 
 #: src/components/fullNode/FullNode.jsx:331
 #~ msgid "Block hash"
@@ -326,15 +326,15 @@ msgstr "Напиши на KeyBase"
 
 #: src/electron/main.tsx:419
 msgid "Chives"
-msgstr "Чиа"
+msgstr "Chives"
 
 #: src/electron/main.tsx:358
 msgid "Chives Blockchain Wiki"
-msgstr "Чиа Блокчејн Википедиа"
+msgstr "Chives Блокчејн Википедиа"
 
 #: src/components/wallet/standard/WalletStandard.tsx:649
 msgid "Chives Wallet"
-msgstr "Чиа паричник"
+msgstr "Chives паричник"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
@@ -742,7 +742,7 @@ msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:147
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chives wallet."
-msgstr "Внесете ги 24те тајни зборови во точен редослед за да го вратите вашиот Чиа паричник."
+msgstr "Внесете ги 24те тајни зборови во точен редослед за да го вратите вашиот Chives паричник."
 
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
