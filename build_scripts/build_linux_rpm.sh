@@ -6,10 +6,10 @@ if [ ! "$1" ]; then
 elif [ "$1" = "amd64" ]; then
 	#PLATFORM="$1"
 	REDHAT_PLATFORM="x86_64"
-	DIR_NAME="chives-blockchain-linux-x64"
+	DIR_NAME="chives-wallet-linux-x64"
 else
 	#PLATFORM="$1"
-	DIR_NAME="chives-blockchain-linux-arm64"
+	DIR_NAME="chives-wallet-linux-arm64"
 fi
 
 pip install setuptools_scm
@@ -57,12 +57,12 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-# sets the version for chives-blockchain in package.json
+# sets the version for chives-wallet in package.json
 cd ./packages/wallet || exit
 cp package.json package.json.orig
 jq --arg VER "$CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
-electron-packager . chives-blockchain --asar.unpack="**/daemon/**" --platform=linux \
+electron-packager . chives-wallet --asar.unpack="**/daemon/**" --platform=linux \
 --icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.blockchain \
 --appVersion=$CHIVES_INSTALLER_VERSION --executable-name=chives-wallet
 LAST_EXIT_CODE=$?

@@ -53,7 +53,7 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-# sets the version for chives-blockchain in package.json
+# sets the version for chives-wallet in package.json
 brew install jq
 cd ./packages/wallet
 cp package.json package.json.orig

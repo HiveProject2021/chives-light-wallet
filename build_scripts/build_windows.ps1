@@ -46,12 +46,12 @@ Write-Output "Chives Version is: $env:CHIVES_INSTALLER_VERSION"
 Write-Output "   ---"
 
 Write-Output "   ---"
-Write-Output "Build chives-blockchain wheels"
+Write-Output "Build chives-wallet wheels"
 Write-Output "   ---"
 pip wheel --use-pep517 --extra-index-url https://pypi.chia.net/simple/ -f . --wheel-dir=.\build_scripts\win_build .
 
 Write-Output "   ---"
-Write-Output "Install chives-blockchain wheels into venv with pip"
+Write-Output "Install chives-wallet wheels into venv with pip"
 Write-Output "   ---"
 
 Write-Output "pip install miniupnpc"
@@ -60,8 +60,8 @@ pip install --no-index --find-links=.\win_build\ miniupnpc
 # Write-Output "pip install setproctitle"
 # pip install setproctitle==1.2.2
 
-Write-Output "pip install chives-blockchain"
-pip install --no-index --find-links=.\win_build\ chives-blockchain
+Write-Output "pip install chives-wallet"
+pip install --no-index --find-links=.\win_build\ chives-wallet
 
 Write-Output "   ---"
 Write-Output "Use pyinstaller to create chives .exe's"

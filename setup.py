@@ -48,8 +48,8 @@ dev_dependencies = [
 
 kwargs = dict(
     name="chives-wallet",
-    author="Mariano Sorgente",
-    author_email="mariano@chivescoin.org",
+    author="HiveProject2021",
+    author_email="admin@chivescoin.org",
     description="Chives blockchain full node, farmer, timelord, and wallet.",
     url="https://chivescoin.org/",
     license="Apache License",
