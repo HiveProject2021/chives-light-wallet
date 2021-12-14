@@ -117,7 +117,7 @@ Write-Output "packageName is $packageName"
 
 Write-Output "   ---"
 Write-Output "electron-packager"
-electron-packager . Chives --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chives.ico --app-version=$packageVersion --executable-name=chives-blockchain
+electron-packager . Chives --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chives.ico --app-version=$packageVersion --executable-name=chives-wallet
 Write-Output "   ---"
 Write-Output "node winstaller.js"
 node winstaller.js

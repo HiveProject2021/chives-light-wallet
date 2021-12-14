@@ -63,7 +63,7 @@ jq --arg VER "$CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.jso
 
 electron-packager . chives-blockchain --asar.unpack="**/daemon/**" --platform=linux \
 --icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.blockchain \
---appVersion=$CHIVES_INSTALLER_VERSION --executable-name=chives-blockchain
+--appVersion=$CHIVES_INSTALLER_VERSION --executable-name=chives-wallet
 LAST_EXIT_CODE=$?
 
 # reset the package.json to the original
@@ -81,7 +81,7 @@ echo "Create chives-$CHIVES_INSTALLER_VERSION.deb"
 rm -rf final_installer
 mkdir final_installer
 electron-installer-debian --src dist/$DIR_NAME/ --dest final_installer/ \
---arch "$PLATFORM" --options.version $CHIVES_INSTALLER_VERSION --options.bin chives-blockchain --options.name chives-blockchain
+--arch "$PLATFORM" --options.version $CHIVES_INSTALLER_VERSION --options.bin chives-wallet --options.name chives-wallet
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-installer-debian failed!"

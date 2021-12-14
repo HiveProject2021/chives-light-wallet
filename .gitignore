@@ -26,6 +26,7 @@ config/plots.yaml
 
 # Bundled code
 chives-blockchain.tar.gz.tar.gz
+chives-wallet.tar.gz.tar.gz
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -67,6 +68,7 @@ activate
 
 # Packaging
 chives-blockchain.tar.gz
+chives-wallet.tar.gz
 
 # Timelord utilities
 vdf_bench
