@@ -18,12 +18,12 @@ function getInstallerConfig () {
     authors: 'Chives Network',
     version: process.env.CHIVES_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontentHiveProject2021/chives-blockchain/master/electron-react/src/assets/img/chives.ico',
+    iconUrl: 'https://raw.githubusercontent.com/HiveProject2021/chives-blockchain/master/electron-react/src/assets/img/chives.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: 'Chives.exe',
-    setupExe: 'ChivesSetup-' + process.env.CHIVES_INSTALLER_VERSION + '.exe',
+    exe: 'Chives-Wallet.exe',
+    setupExe: 'ChivesWalletSetup-' + process.env.CHIVES_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chives.ico')
   })
 }
