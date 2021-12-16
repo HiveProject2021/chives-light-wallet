@@ -4,7 +4,7 @@ min_mainnet_k_size: 29
 ping_interval: 120
 self_hostname: &self_hostname "localhost"
 prefer_ipv6: False
-daemon_port: 56900
+daemon_port: 56920
 daemon_max_message_size: 50000000 # maximum size of RPC message in bytes
 inbound_rate_limit_percent: 100
 outbound_rate_limit_percent: 30
@@ -312,10 +312,10 @@ full_node:
 
 ui:
    # The ui node server (if run) will run on this port
-  port: 8222
+  port: 8242
 
   # Which port to use to communicate with the full node
-  rpc_port: 9755
+  rpc_port: 9775
 
   # This SSH key is for the ui SSH server
   ssh_filename: config/ssh_host_key
@@ -326,7 +326,7 @@ ui:
   # this is where the electron UI will find its daemon
   # defaults to the one running locally with its private keys
   daemon_host: *self_hostname
-  daemon_port: 56900
+  daemon_port: 56920
   daemon_ssl:
     private_crt: config/ssl/daemon/private_daemon.crt
     private_key: config/ssl/daemon/private_daemon.key
@@ -347,8 +347,8 @@ introducer:
     public_key:  "config/ssl/full_node/public_full_node.key"
 
 wallet:
-  port: 9649
-  rpc_port: 9856
+  port: 9669
+  rpc_port: 9876
 
   enable_profiler: False
 
