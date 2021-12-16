@@ -25,7 +25,7 @@ async function loadConfig(net) {
     );
 
     self_hostname = lodash.get(config, 'ui.daemon_host', 'localhost'); // jshint ignore:line
-    const daemon_port = lodash.get(config, 'ui.daemon_port', 56900); // jshint ignore:line
+    const daemon_port = lodash.get(config, 'ui.daemon_port', 56920); // jshint ignore:line
 
     // store these in the global object so they can be used by both main and renderer processes
     global.daemon_rpc_ws = `wss://${self_hostname}:${daemon_port}`;

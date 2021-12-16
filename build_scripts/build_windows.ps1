@@ -46,12 +46,12 @@ Write-Output "Chives Version is: $env:CHIVES_INSTALLER_VERSION"
 Write-Output "   ---"
 
 Write-Output "   ---"
-Write-Output "Build chives-blockchain wheels"
+Write-Output "Build chives-wallet wheels"
 Write-Output "   ---"
 pip wheel --use-pep517 --extra-index-url https://pypi.chia.net/simple/ -f . --wheel-dir=.\build_scripts\win_build .
 
 Write-Output "   ---"
-Write-Output "Install chives-blockchain wheels into venv with pip"
+Write-Output "Install chives-wallet wheels into venv with pip"
 Write-Output "   ---"
 
 Write-Output "pip install miniupnpc"
@@ -60,8 +60,8 @@ pip install --no-index --find-links=.\win_build\ miniupnpc
 # Write-Output "pip install setproctitle"
 # pip install setproctitle==1.2.2
 
-Write-Output "pip install chives-blockchain"
-pip install --no-index --find-links=.\win_build\ chives-blockchain
+Write-Output "pip install chives-wallet"
+pip install --no-index --find-links=.\win_build\ chives-wallet
 
 Write-Output "   ---"
 Write-Output "Use pyinstaller to create chives .exe's"
@@ -111,13 +111,13 @@ editbin.exe /STACK:8000000 daemon\chives.exe
 Write-Output "   ---"
 
 $packageVersion = "$env:CHIVES_INSTALLER_VERSION"
-$packageName = "Chives-$packageVersion"
+$packageName = "Chives-Wallet-$packageVersion"
 
 Write-Output "packageName is $packageName"
 
 Write-Output "   ---"
 Write-Output "electron-packager"
-electron-packager . Chives --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chives.ico --app-version=$packageVersion --executable-name=chives-blockchain
+electron-packager . "Chives Light Wallet" --asar.unpack="**\daemon\**" --overwrite --icon=.\src\assets\img\chives.ico --app-version=$packageVersion --executable-name=chives-wallet
 Write-Output "   ---"
 Write-Output "node winstaller.js"
 node winstaller.js
@@ -125,7 +125,7 @@ Write-Output "   ---"
 
 # Specific to protocol_and_cats_rebased branch, move these directories to where they used to be so the rest of the CI
 # finds them where it expects to
-Copy-Item "Chives-win32-x64" -Destination "..\..\" -Recurse
+Copy-Item "Chives Light Wallet-win32-x64" -Destination "..\..\" -Recurse
 Copy-Item "release-builds" -Destination "..\..\" -Recurse
 
 # Move back to the root of the gui directory
@@ -137,8 +137,8 @@ If ($env:HAS_SECRET) {
    Write-Output "   ---"
    Write-Output "Add timestamp and verify signature"
    Write-Output "   ---"
-   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\ChivesSetup-$packageVersion.exe
-   signtool.exe verify /v /pa .\release-builds\windows-installer\ChivesSetup-$packageVersion.exe
+   signtool.exe timestamp /v /t http://timestamp.comodoca.com/ .\release-builds\windows-installer\ChivesWalletSetup-$packageVersion.exe
+   signtool.exe verify /v /pa .\release-builds\windows-installer\ChivesWalletSetup-$packageVersion.exe
    }   Else    {
    Write-Output "Skipping timestamp and verify signatures - no authorization to install certificates"
 }
