@@ -15,7 +15,7 @@ if [ "$(id -u)" = 0 ]; then
 fi
 
 # Allows overriding the branch or commit to build in chives-blockchain-gui
-SUBMODULE_BRANCH=main
+SUBMODULE_BRANCH=$1
 
 UBUNTU=false
 # Manage npm and other install requirements on an OS specific basis
@@ -68,9 +68,6 @@ if $UBUNTU; then
 	UBUNTU_PRE_2004=$(python -c 'import subprocess; process = subprocess.run(["lsb_release", "-rs"], stdout=subprocess.PIPE); print(float(process.stdout) < float(20.04))')
 fi
 
-# Must Set this to True, other wise will be fail when "sh install-gui.sh" in Ubuntu 20.04
-UBUNTU_PRE_2004=True
-
 if [ "$UBUNTU_PRE_2004" = "True" ]; then
 	echo "Installing on Ubuntu older than 20.04 LTS: Ugrading node.js to stable."
 	UBUNTU_PRE_2004=true # Unfortunately Python returns True when shell expects true
@@ -87,15 +84,23 @@ fi
 # Pipelines directly, so skip unless you are completing a source/developer install.
 # Ubuntu special cases above.
 if [ ! "$CI" ]; then
-	
 	echo "Running git submodule update --init --recursive."
 	echo ""
 	git submodule update --init --recursive
 	echo "Running git submodule update."
 	echo ""
 	git submodule update
-	
 	cd chives-blockchain-gui
+
+	if [ "$SUBMODULE_BRANCH" ];
+	then
+    git fetch
+		git checkout "$SUBMODULE_BRANCH"
+    git pull
+		echo ""
+		echo "Building the GUI with branch $SUBMODULE_BRANCH"
+		echo ""
+	fi
 
 	npm install
 	# Audit fix doesn't currently play nice with lerna

@@ -15,7 +15,7 @@ msgstr ""
 "X-Crowdin-Project: chives-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: da\n"
-"X-Crowdin-File: /[Chives-Network.chives-blockchain-gui] main/src/locales/en-US/messages.po\n"
+"X-Crowdin-File: /[HiveProject2021.chives-blockchain-gui] main/src/locales/en-US/messages.po\n"
 "X-Crowdin-File-ID: 118\n"
 
 #: src/components/plot/add/PlotAddNFT.tsx:62
@@ -952,7 +952,7 @@ msgid "Fee"
 msgstr "Gebyr"
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
-#~ msgid "Fee (TXCH)"
+#~ msgid "Fee (TXCC)"
 #~ msgstr ""
 
 #: src/components/wallet/coloured/WalletColoured.tsx:420
@@ -1154,16 +1154,16 @@ msgstr "Interval"
 #~ msgstr "Tilslut til en Pulje"
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
-#~ msgstr "Tilslut en pulje og få stabil XCH farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving."
+#~ msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgstr "Tilslut en pulje og få stabil XCC farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-#~ msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-#~ msgstr "Tilslut en pulje og få stabil XCH farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving. Tildel dine plots til en plot NFT. Du kan nemt skifte imellem puljer uden at skulle re-plotte."
+#~ msgid "Join a pool and get consistent XCC farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgstr "Tilslut en pulje og få stabil XCC farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving. Tildel dine plots til en plot NFT. Du kan nemt skifte imellem puljer uden at skulle re-plotte."
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-#~ msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
-#~ msgstr "Tilslut en pulje og få stabil XCH farm belønninger. Opret en plot NFT og tildel dine nye plot filer til en gruppe."
+#~ msgid "Join a pool and get more consistent XCC farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgstr "Tilslut en pulje og få stabil XCC farm belønninger. Opret en plot NFT og tildel dine nye plot filer til en gruppe."
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 #~ msgid "K-Size"
@@ -1429,8 +1429,8 @@ msgstr "Ikke Synkroniseret"
 #~ msgstr "Ikke fundet Plotfiler"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:188
-#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
-#~ msgstr "Bemærk, at dette ikke ændrer din pulje udbetalingsadresser. Dette påvirker kun gamle plot filer af gammelt format, og 0,25XCH belønning for pulje plots."
+#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCC reward for pooling plots."
+#~ msgstr "Bemærk, at dette ikke ændrer din pulje udbetalingsadresser. Dette påvirker kun gamle plot filer af gammelt format, og 0,25XCC belønning for pulje plots."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
 #: src/components/plotNFT/PlotNFTCard.tsx:160
@@ -2118,8 +2118,8 @@ msgstr "Valgt gendannelsesfil:"
 #~ msgstr "Selv Pulje"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-#~ msgid "Self pool. When you win a block you will earn XCH rewards."
-#~ msgstr "Selvpulje. Når du vinder en blok, vil du tjene XCH belønning."
+#~ msgid "Self pool. When you win a block you will earn XCC rewards."
+#~ msgstr "Selvpulje. Når du vinder en blok, vil du tjene XCC belønning."
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:47
@@ -2179,8 +2179,8 @@ msgstr "Log Ind"
 #~ msgstr "Skipper tilføjelse af endelig mappe til harvesteren for farmning"
 
 #: src/components/pool/PoolHero.tsx:26
-#~ msgid "Smooth out your XCH farming rewards by joining a pool."
-#~ msgstr "Glat dine XCH belønninger ud ved at deltage i en pulje."
+#~ msgid "Smooth out your XCC farming rewards by joining a pool."
+#~ msgstr "Glat dine XCC belønninger ud ved at deltage i en pulje."
 
 #: src/modules/message.js:568
 #: src/modules/message.js:583
@@ -2294,23 +2294,23 @@ msgstr "Synkroniserer"
 #~ msgstr "Syncing {progress}/{tip}"
 
 #: src/components/farm/card/FarmCardBlockRewards.tsx:15
-#~ msgid "TXCH Block Rewards"
+#~ msgid "TXCC Block Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardCoinbaseRewards.tsx:12
-#~ msgid "TXCH Farming Rewards"
+#~ msgid "TXCC Farming Rewards"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardFeesReward.tsx:12
-#~ msgid "TXCH Fees Collected"
+#~ msgid "TXCC Fees Collected"
 #~ msgstr ""
 
 #: src/components/farm/card/FarmCardUserFees.tsx:12
-#~ msgid "TXCH User Fees"
-#~ msgstr "TXCH User Fees"
+#~ msgid "TXCC User Fees"
+#~ msgstr "TXCC User Fees"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:15
-#~ msgid "TXCH User Transaction Fees"
+#~ msgid "TXCC User Transaction Fees"
 #~ msgstr ""
 
 #: src/components/pool/PoolInfo.tsx:37
@@ -2392,8 +2392,8 @@ msgstr "Pulje URL skal bruge https protokol. {normalizedUrl}"
 #~ msgstr "Det samlede transaktionsgebyr i denne blok. Belønnet til farmeren."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-#~ msgstr "Dette er instruktionerne for hvordan farmeren ønsker at blive betalt. Som standard vil dette være en XCH-adresse, men det kan indstilles til en vilkårlig streng med en størrelse på mindre end 1024 tegn, så det kan repræsentere en anden blockchain eller betalingssystem-id."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCC address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgstr "Dette er instruktionerne for hvordan farmeren ønsker at blive betalt. Som standard vil dette være en XCC-adresse, men det kan indstilles til en vilkårlig streng med en størrelse på mindre end 1024 tegn, så det kan repræsentere en anden blockchain eller betalingssystem-id."
 
 #: src/components/plot/PlotsFailed.tsx:40
 #~ msgid "These plots are invalid, you might want to delete them."
