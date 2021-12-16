@@ -1,7 +1,7 @@
 # chives-blockchain
 ![Alt text](https://www.chivescoin.org/img/chives_logo.svg)
 
-![GitHub contributors](https://img.shields.io/github/contributors/Chives-Network/chives-blockchain?logo=GitHub)
+![GitHub contributors](https://img.shields.io/github/contributors/HiveProject2021/chives-blockchain?logo=GitHub)
 
 Please check out the [wiki](https://github.com/HiveProject2021/chives-blockchain/wiki)
 and [FAQ](https://github.com/HiveProject2021/chives-blockchain/wiki/FAQ) for

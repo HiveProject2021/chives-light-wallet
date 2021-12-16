@@ -25,9 +25,9 @@ fi
 echo "Chives Installer Version is: $CHIVES_INSTALLER_VERSION"
 
 echo "Installing npm and electron packagers"
-sudo npm install electron-packager -g
-sudo npm install electron-installer-redhat -g
-sudo npm install lerna -g
+npm install electron-packager -g
+npm install electron-installer-redhat -g
+npm install lerna -g
 
 echo "Create dist/"
 rm -rf dist
@@ -59,8 +59,8 @@ fi
 
 # sets the version for chives-blockchain in package.json
 cd ./packages/wallet || exit
-# cp package.json package.json.orig
-# jq --arg VER "$CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
+cp package.json package.json.orig
+jq --arg VER "$CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
 electron-packager . chives-blockchain --asar.unpack="**/daemon/**" --platform=linux \
 --icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.blockchain \
@@ -68,7 +68,7 @@ electron-packager . chives-blockchain --asar.unpack="**/daemon/**" --platform=li
 LAST_EXIT_CODE=$?
 
 # reset the package.json to the original
-# mv package.json.orig package.json
+mv package.json.orig package.json
 
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-packager failed!"
