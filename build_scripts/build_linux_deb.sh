@@ -5,10 +5,10 @@ if [ ! "$1" ]; then
 	exit 1
 elif [ "$1" = "amd64" ]; then
 	PLATFORM="$1"
-	DIR_NAME="chives-wallet-linux-x64"
+	DIR_NAME="chives-blockchain-linux-x64"
 else
 	PLATFORM="$1"
-	DIR_NAME="chives-wallet-linux-arm64"
+	DIR_NAME="chives-blockchain-linux-arm64"
 fi
 
 pip install setuptools_scm
@@ -56,14 +56,14 @@ if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	exit $LAST_EXIT_CODE
 fi
 
-# sets the version for chives-wallet in package.json
+# sets the version for chives-blockchain in package.json
 cd ./packages/wallet || exit
 cp package.json package.json.orig
 jq --arg VER "$CHIVES_INSTALLER_VERSION" '.version=$VER' package.json > temp.json && mv temp.json package.json
 
-electron-packager . chives-wallet --asar.unpack="**/daemon/**" --platform=linux \
---icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.wallet \
---appVersion=$CHIVES_INSTALLER_VERSION --executable-name=chives-wallet
+electron-packager . chives-blockchain --asar.unpack="**/daemon/**" --platform=linux \
+--icon=src/assets/img/Chives.icns --overwrite --app-bundle-id=net.chives.blockchain \
+--appVersion=$CHIVES_INSTALLER_VERSION --executable-name=chives-blockchain
 LAST_EXIT_CODE=$?
 
 # reset the package.json to the original
@@ -77,11 +77,11 @@ fi
 mv $DIR_NAME ../../../build_scripts/dist/
 cd ../../../build_scripts || exit
 
-echo "Create Chives-Wallet-$CHIVES_INSTALLER_VERSION.deb"
+echo "Create chives-$CHIVES_INSTALLER_VERSION.deb"
 rm -rf final_installer
 mkdir final_installer
 electron-installer-debian --src dist/$DIR_NAME/ --dest final_installer/ \
---arch "$PLATFORM" --options.version $CHIVES_INSTALLER_VERSION --options.bin chives-wallet --options.name chives-wallet
+--arch "$PLATFORM" --options.version $CHIVES_INSTALLER_VERSION --options.bin chives-blockchain --options.name chives-blockchain
 LAST_EXIT_CODE=$?
 if [ "$LAST_EXIT_CODE" -ne 0 ]; then
 	echo >&2 "electron-installer-debian failed!"

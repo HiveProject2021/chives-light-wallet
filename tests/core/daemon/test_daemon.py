@@ -29,7 +29,7 @@ atexit.register(cleanup_keyring, temp_keyring2)
 b_tools = create_block_tools(constants=test_constants_modified, keychain=temp_keyring1.get_keychain())
 b_tools_1 = create_block_tools(constants=test_constants_modified, keychain=temp_keyring2.get_keychain())
 new_config = b_tools._config
-new_config["daemon_port"] = 56920
+new_config["daemon_port"] = 56900
 b_tools.change_config(new_config)
 
 
@@ -55,7 +55,7 @@ class TestDaemon:
     async def get_b_tools(self, get_temp_keyring):
         local_b_tools = await create_block_tools_async(constants=test_constants_modified, keychain=get_temp_keyring)
         new_config = local_b_tools._config
-        new_config["daemon_port"] = 56920
+        new_config["daemon_port"] = 56900
         local_b_tools.change_config(new_config)
         return local_b_tools
 
@@ -80,7 +80,7 @@ class TestDaemon:
         ssl_context = b_tools.get_daemon_ssl_context()
 
         ws = await session.ws_connect(
-            "wss://127.0.0.1:56920",
+            "wss://127.0.0.1:56900",
             autoclose=True,
             autoping=True,
             heartbeat=60,
@@ -183,7 +183,7 @@ class TestDaemon:
 
         async with aiohttp.ClientSession() as session:
             async with session.ws_connect(
-                "wss://127.0.0.1:56920",
+                "wss://127.0.0.1:56900",
                 autoclose=True,
                 autoping=True,
                 heartbeat=60,

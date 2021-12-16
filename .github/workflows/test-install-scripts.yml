@@ -1,7 +1,6 @@
 name: Test Install Scripts
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main

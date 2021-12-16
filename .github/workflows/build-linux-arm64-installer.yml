@@ -1,7 +1,6 @@
 name: Linux ARM64 installer on Python 3.8
 
 on:
-  workflow_dispatch:
   push:
     branches:
       - main
@@ -97,8 +96,8 @@ jobs:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       if: steps.check_secrets.outputs.HAS_SECRET
       run: |
-          aws s3 cp "$GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb" s3://download-chives-net/builds/
-          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/protocol_and_cats_rebased/
+          aws s3 cp "$GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb" s3://download-chives-net/builds/
+          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/protocol_and_cats_rebased/
 
     - name: Create Checksums
       if: startsWith(github.ref, 'refs/tags/') || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/protocol_and_cats_rebased'
@@ -106,7 +105,7 @@ jobs:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
         ls $GITHUB_WORKSPACE/build_scripts/final_installer/
-        sha256sum $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb > $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256
+        sha256sum $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb > $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256
         ls $GITHUB_WORKSPACE/build_scripts/final_installer/
 
     - name: Install py3createtorrent
@@ -119,7 +118,7 @@ jobs:
       env:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
-        py3createtorrent -f -t udp://tracker.opentrackr.org:1337/announce $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb -o $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb.torrent --webseed https://download-chives-net.s3.us-west-2.amazonaws.com/install/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb
+        py3createtorrent -f -t udp://tracker.opentrackr.org:1337/announce $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb -o $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb.torrent --webseed https://download-chives-net.s3.us-west-2.amazonaws.com/install/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb
         ls $GITHUB_WORKSPACE/build_scripts/final_installer/
 
     - name: Upload Beta Installer
@@ -127,16 +126,16 @@ jobs:
       env:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
-        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/beta/chives-blockchain_arm64_latest_beta.deb
-        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256 s3://download-chives-net/beta/chives-blockchain_arm64_latest_beta.deb.sha256
+        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/beta/chives-blockchain_arm64_latest_beta.deb
+        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256 s3://download-chives-net/beta/chives-blockchain_arm64_latest_beta.deb.sha256
 
     - name: Upload CATs Beta Installer
       if: steps.check_secrets.outputs.HAS_SECRET && github.ref == 'refs/heads/protocol_and_cats_rebased'
       env:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
-        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/cats-beta-installers/chives-blockchain_arm64_latest_cats_beta.deb
-        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256 s3://download-chives-net/cats-beta-installers/chives-blockchain_arm64_latest_cats_beta.deb.sha256
+        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/cats-beta-installers/chives-blockchain_arm64_latest_cats_beta.deb
+        aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256 s3://download-chives-net/cats-beta-installers/chives-blockchain_arm64_latest_cats_beta.deb.sha256
 
     - name: Upload Release Files
       if: steps.check_secrets.outputs.HAS_SECRET && startsWith(github.ref, 'refs/tags/')
@@ -144,9 +143,9 @@ jobs:
         CHIVES_INSTALLER_VERSION: ${{ steps.version_number.outputs.CHIVES_INSTALLER_VERSION }}
       run: |
           ls $GITHUB_WORKSPACE/build_scripts/final_installer/
-          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/install/
-          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256 s3://download-chives-net/install/
-          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-wallet_${CHIVES_INSTALLER_VERSION}_arm64.deb.torrent s3://download-chives-net/torrents/
+          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb s3://download-chives-net/install/
+          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb.sha256 s3://download-chives-net/install/
+          aws s3 cp $GITHUB_WORKSPACE/build_scripts/final_installer/chives-blockchain_${CHIVES_INSTALLER_VERSION}_arm64.deb.torrent s3://download-chives-net/torrents/
 
     - name: Get tag name
       if: startsWith(github.ref, 'refs/tags/')

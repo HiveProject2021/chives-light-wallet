@@ -832,7 +832,7 @@ Batch process weight proof epochs in groups of 900 to fit below May 2020 sqlite 
 ### Added
 
 - This is the first release in our release candidate series. There are still a few things that will change at the edges but the blockchain, clvm, and chialisp are in release form. We have one major change to chialisp/clvm that we have chosen to schedule for the next release as in this release we're breaking the way q/quote works. We also have one more revision to the VDF that will decrease the sizes of the proofs of time. We expect a few more releases in the release candidate series.
-- Installers will now be of the pattern ChivesWalletSetup-0.2.1.exe. `0.2` is release candidate and the final `.1` is the first release candidate.
+- Installers will now be of the pattern ChivesSetup-0.2.1.exe. `0.2` is release candidate and the final `.1` is the first release candidate.
 - Use 'chives wallet get_transactions' in the command line to see your transactions.
 - 'chives wallet show' now shows your wallet's height.
 - Last Attempted Proof is now above Latest Block Challenge on the Farm page of the GUI.
@@ -1387,9 +1387,9 @@ that ci runs successfully complete from PRs or forked repositories.
 we expect to add in future releases.
 - The chives executable is now available if installing from the Windows or MacOS
 Graphical installer. Try `./chives -h` from
-`~\AppData\Local\Chives-Wallet\app-0.1.8\resources\app.asar.unpacked\daemon\`
+`~\AppData\Local\Chives-Blockchain\app-0.1.8\resources\app.asar.unpacked\daemon\`
 in Windows or
-`/Applications/Chives Light Wallet.app/Contents/Resources/app.asar.unpacked/daemon` on MacOS.
+`/Applications/Chives.app/Contents/Resources/app.asar.unpacked/daemon` on MacOS.
 
 ### Changed
 
