@@ -15,7 +15,7 @@ if [ "$(id -u)" = 0 ]; then
 fi
 
 # Allows overriding the branch or commit to build in chives-blockchain-gui
-SUBMODULE_BRANCH=$1
+# SUBMODULE_BRANCH=$1
 
 UBUNTU=false
 # Manage npm and other install requirements on an OS specific basis
@@ -92,15 +92,15 @@ if [ ! "$CI" ]; then
 	git submodule update
 	cd chives-blockchain-gui
 
-	if [ "$SUBMODULE_BRANCH" ];
-	then
-    git fetch
-		git checkout "$SUBMODULE_BRANCH"
-    git pull
-		echo ""
-		echo "Building the GUI with branch $SUBMODULE_BRANCH"
-		echo ""
-	fi
+	# if [ "$SUBMODULE_BRANCH" ];
+	# then
+    # git fetch
+	#	git checkout "$SUBMODULE_BRANCH"
+    # git pull
+	#	echo ""
+	#	echo "Building the GUI with branch $SUBMODULE_BRANCH"
+	#	echo ""
+	# fi
 
 	npm install
 	# Audit fix doesn't currently play nice with lerna
