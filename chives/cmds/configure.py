@@ -94,8 +94,8 @@ def configure(
             print("Setting Testnet")
             testnet_port = "59699"
             testnet_introducer = "beta1_introducer.chivescoin.org"
-            testnet_dns_introducer = "dns-introducer-testnet7.chivescoin.org"
-            testnet = "testnet7"
+            testnet_dns_introducer = "dns-introducer-testnet10.chivescoin.org"
+            testnet = "testnet10"
             config["full_node"]["port"] = int(testnet_port)
             config["full_node"]["introducer_peer"]["port"] = int(testnet_port)
             config["farmer"]["full_node_peer"]["port"] = int(testnet_port)
