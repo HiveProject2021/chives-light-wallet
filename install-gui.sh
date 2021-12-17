@@ -15,7 +15,7 @@ if [ "$(id -u)" = 0 ]; then
 fi
 
 # Allows overriding the branch or commit to build in chives-blockchain-gui
-SUBMODULE_BRANCH=$1
+SUBMODULE_BRANCH=main
 
 UBUNTU=false
 # Manage npm and other install requirements on an OS specific basis
@@ -67,6 +67,9 @@ UBUNTU_PRE_2004=false
 if $UBUNTU; then
 	UBUNTU_PRE_2004=$(python -c 'import subprocess; process = subprocess.run(["lsb_release", "-rs"], stdout=subprocess.PIPE); print(float(process.stdout) < float(20.04))')
 fi
+
+# Must Set this to True, other wise will be fail when "sh install-gui.sh" in Ubuntu 20.04
+UBUNTU_PRE_2004=True
 
 if [ "$UBUNTU_PRE_2004" = "True" ]; then
 	echo "Installing on Ubuntu older than 20.04 LTS: Ugrading node.js to stable."
