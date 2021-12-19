@@ -439,7 +439,12 @@ wallet:
 
   testing: False
   database_path: wallet/db/blockchain_wallet_v1_CHALLENGE_KEY.sqlite
-  wallet_peers_file_path: wallet/db/wallet_peers.dat
+  wallet_peers_path: wallet/db/wallet_peers.dat
+  # Allow connecting to remote peers for sync
+  connect_to_unknown_peers: True
+  # Use DNS for full node peers
+  dns_servers:
+    - "dns-introducer.chivescoin.org"
 
   logging: *logging
   network_overrides: *network_overrides
