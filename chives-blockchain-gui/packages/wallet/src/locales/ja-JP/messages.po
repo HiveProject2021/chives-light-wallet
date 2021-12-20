@@ -321,7 +321,7 @@ msgstr "残高"
 #~ msgstr "購入"
 
 #: src/constants/WalletName.ts:23
-msgid "CAT Wallet"
+msgid "Token Wallet"
 msgstr ""
 
 #: src/components/wallet/Wallets.tsx:49
@@ -631,7 +631,7 @@ msgstr "秘密鍵を新規作成"
 #~ msgstr "管理者ウォレットを作成"
 
 #: src/components/wallet/cat/WalletCATCreateExisting.tsx:76
-msgid "Create custom CAT Wallet"
+msgid "Create custom Token Wallet"
 msgstr ""
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:39

@@ -391,7 +391,7 @@ class WalletRpcApi:
         else:
             fee = uint64(0)
         if request["wallet_type"] == "cat_wallet":
-            name = request.get("name", "CAT Wallet")
+            name = request.get("name", "Token Wallet")
             if request["mode"] == "new":
                 async with self.service.wallet_state_manager.lock:
                     cc_wallet: CCWallet = await CCWallet.create_new_cc_wallet(

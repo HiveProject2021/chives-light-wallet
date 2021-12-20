@@ -321,8 +321,8 @@ msgstr "Balance"
 #~ msgstr "Buy"
 
 #: src/constants/WalletName.ts:23
-msgid "CAT Wallet"
-msgstr "CAT Wallet"
+msgid "Token Wallet"
+msgstr "Token Wallet"
 
 #: src/components/wallet/Wallets.tsx:49
 #~ msgid "CC Wallet"
@@ -631,8 +631,8 @@ msgstr "Create a new private key"
 #~ msgstr "Create admin wallet"
 
 #: src/components/wallet/cat/WalletCATCreateExisting.tsx:76
-msgid "Create custom CAT Wallet"
-msgstr "Create custom CAT Wallet"
+msgid "Create custom Token Wallet"
+msgstr "Create custom Token Wallet"
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:39
 #~ msgid "Create from Existing"

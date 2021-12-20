@@ -288,7 +288,7 @@ class TestWalletRpc:
             assert bal_0["pending_coin_removal_count"] == 1
             col = await client.get_cat_colour(cat_0_id)
             assert col == colour
-            assert (await client.get_cat_name(cat_0_id)) == "CAT Wallet"
+            assert (await client.get_cat_name(cat_0_id)) == "Token Wallet"
             await client.set_cat_name(cat_0_id, "My cat")
             assert (await client.get_cat_name(cat_0_id)) == "My cat"
 

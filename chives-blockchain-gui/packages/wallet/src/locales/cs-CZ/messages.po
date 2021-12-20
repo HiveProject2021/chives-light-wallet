@@ -321,7 +321,7 @@ msgstr "Zůstatek"
 #~ msgstr "Koupit"
 
 #: src/constants/WalletName.ts:23
-msgid "CAT Wallet"
+msgid "Token Wallet"
 msgstr ""
 
 #: src/components/wallet/Wallets.tsx:49
@@ -631,7 +631,7 @@ msgstr "Vytvořit nový privátní klíč"
 #~ msgstr "Vytvořit administrátorskou peněženku"
 
 #: src/components/wallet/cat/WalletCATCreateExisting.tsx:76
-msgid "Create custom CAT Wallet"
+msgid "Create custom Token Wallet"
 msgstr ""
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:39

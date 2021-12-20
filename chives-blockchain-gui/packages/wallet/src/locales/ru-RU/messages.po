@@ -321,7 +321,7 @@ msgstr "Баланс"
 #~ msgstr "Покупка"
 
 #: src/constants/WalletName.ts:23
-msgid "CAT Wallet"
+msgid "Token Wallet"
 msgstr ""
 
 #: src/components/wallet/Wallets.tsx:49
@@ -803,7 +803,7 @@ msgstr "Создать новый приватный ключ"
 #~ msgstr "Создать администрационный кошелек"
 
 #: src/components/wallet/cat/WalletCATCreateExisting.tsx:76
-msgid "Create custom CAT Wallet"
+msgid "Create custom Token Wallet"
 msgstr ""
 
 #: src/components/wallet/cat/WalletCATSelect.tsx:39
