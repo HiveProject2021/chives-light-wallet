@@ -55,7 +55,7 @@ class MempoolManager:
         # The fee per cost must be above this amount to consider the fee "nonzero", and thus able to kick out other
         # transactions. This prevents spam. This is equivalent to 0.055 XCC per block, or about 0.00005 XCC for two
         # spends.
-        self.nonzero_fee_minimum_fpc = 5
+        self.nonzero_fee_minimum_fpc = 0.1
 
         self.limit_factor = 0.5
         self.mempool_max_total_cost = int(self.constants.MAX_BLOCK_COST_CLVM * self.constants.MEMPOOL_BLOCK_BUFFER)
