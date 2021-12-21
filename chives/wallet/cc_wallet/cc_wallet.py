@@ -66,7 +66,7 @@ class CCWallet:
 
     @staticmethod
     async def create_new_cc_wallet(
-        wallet_state_manager: Any, wallet: Wallet, cat_tail_info: Dict[str, Any], amount: uint64, name="CAT WALLET"
+        wallet_state_manager: Any, wallet: Wallet, cat_tail_info: Dict[str, Any], amount: uint64, name="Token Wallet"
     ):
         self = CCWallet()
         self.cost_of_single_tx = None
@@ -148,7 +148,7 @@ class CCWallet:
 
     @staticmethod
     async def create_wallet_for_cc(
-        wallet_state_manager: Any, wallet: Wallet, limitations_program_hash_hex: str, name="CAT WALLET"
+        wallet_state_manager: Any, wallet: Wallet, limitations_program_hash_hex: str, name="Token Wallet"
     ) -> CCWallet:
         self = CCWallet()
         self.cost_of_single_tx = None
