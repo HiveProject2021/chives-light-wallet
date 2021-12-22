@@ -79,7 +79,7 @@ mv $DIR_NAME ../../../build_scripts/dist/
 cd ../../../build_scripts || exit
 
 if [ "$REDHAT_PLATFORM" = "x86_64" ]; then
-	echo "Create chives-blockchain-$CHIVES_INSTALLER_VERSION.rpm"
+	echo "Create chives-wallet-$CHIVES_INSTALLER_VERSION.rpm"
 
 	# shellcheck disable=SC2046
 	NODE_ROOT="$(dirname $(dirname $(which node)))"
