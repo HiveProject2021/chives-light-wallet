@@ -41,6 +41,24 @@ def remove_singleton_truth_wrapper(puzzle: Program) -> Program:
     return inner_puzzle
 
 
+# Take standard coin and amount -> curried_singleton.get_tree_hash()
+# 得到curried_singleton.get_tree_hash(),通常用来代表NFT的所有权
+def launch_conditions_and_coinsol_return_curried_singleton(
+    coin: Coin,
+    inner_puzzle: Program,
+    amount: uint64,
+) -> str:
+    if (amount % 2) == 0:
+        raise ValueError("Coin amount cannot be even. Subtract one mojo.")
+
+    launcher_coin: Coin = generate_launcher_coin(coin, amount)
+    curried_singleton: Program = SINGLETON_MOD.curry(
+        (SINGLETON_MOD_HASH, (launcher_coin.name(), SINGLETON_LAUNCHER_HASH)),
+        inner_puzzle,
+    )
+    
+    return curried_singleton.get_tree_hash()
+    
 # Take standard coin and amount -> launch conditions & launcher coin solution
 def launch_conditions_and_coinsol(
     coin: Coin,
