@@ -1,5 +1,7 @@
 import asyncio
 import logging
+import requests
+import json
 from pathlib import Path
 from typing import Callable, Dict, List, Optional, Tuple, Any
 
@@ -756,7 +758,16 @@ class WalletRpcApi:
     ##########################################################################################
 
     async def get_cat_list(self, request):
-        return {"cat_list": list(DEFAULT_CATS.values())}
+        cat_list = {"cat_list": list(DEFAULT_CATS.values())}
+        try:
+            r = requests.get("https://chivescoin.farm/api/tokens.php")
+            r.raise_for_status()
+            web_cats = r.json()
+            for key in web_cats.keys():
+                cat_list.update()
+        except Exception as e:
+            log.warning(f"Failed to get CATS list online: {e}")
+        return cat_list
 
     async def cc_set_name(self, request):
         assert self.service.wallet_state_manager is not None
